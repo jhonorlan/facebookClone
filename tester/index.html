@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+</head>
+<body>
+	
+	<button class="add">
+		Click me
+	</button>
+
+
+</body>
+
+<script type="text/javascript">
+	$(document).on("click",".add",function(){
+		
+		makeDialogBox(false,{
+			header:"Logout",
+			content:"Do you really want to logout?",
+			typeOfContent:"pick",
+			buttons:false,
+			Allbuttons:{
+				Cancel:{
+
+					action:function(){
+						alert("action");
+					}
+				},
+				Continue:{
+					background:"#1877F2",
+					action:function(){
+						alert("awdwa")
+					}
+	
+			}
+			}
+		});
+	});
+	$(document).on("click",".DialogBox-background",function(){
+		$(this).parent().remove();
+	});
+	function makeDialogBox(...Args){
+		let Ar0 = Args[0];
+		let Ar1 = Args[1];
+		let content = null;
+		let typeOfContent = Ar1["typeOfContent"];
+		let header = Ar1["header"];
+		let buttons = Ar1["buttons"];
+		let Allbuttons = "";
+
+		if(buttons == false || buttons == null){
+
+		}else{
+			obj = Object.entries(Ar1["Allbuttons"]);
+			Allbuttons = `<div class="buttons">`;
+
+			for(let i = 0; i < obj.length;  i++){
+				let button = obj[i];
+				let btnObj = button[1];
+				Allbuttons += `<button onclick="`+ btnObj.action +`"><span>`+ button[0] +`</span></button>`;
+			}
+			
+			Allbuttons += `</div`;
+
+		}
+		if(header == false || header == null){
+			header = "Dialog";
+		}
+		if(typeOfContent == "pick"){
+			 content = `
+			<div class="item"><div class="circle" style="background-color: rgb(138, 57, 239); background-image: radial-gradient(circle at center 75%, rgb(138, 57, 239) 0%, rgb(138, 57, 239) 6%, rgb(114, 76, 236) 12%, rgb(63, 119, 230) 18%, rgb(11, 161, 223) 24%, rgb(1, 179, 170) 30%, rgb(1, 190, 105) 36%, rgb(1, 201, 45) 42%, rgb(121, 199, 24) 48%, rgb(217, 197, 7) 54%, rgb(255, 176, 1) 60%, rgb(255, 135, 1) 66%, rgb(255, 122, 1) 72%, rgb(255, 93, 6) 78%, rgb(255, 49, 14) 84%, rgb(255, 4, 23) 90%, rgb(255, 0, 24) 96%);"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(255, 124, 168); background-image: radial-gradient(circle at center 75%, rgb(0, 229, 255) 0%, rgb(167, 151, 255) 50%, rgb(255, 143, 178) 100%);"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(26, 219, 91); background-image: radial-gradient(circle at center 75%, rgb(255, 210, 0) 0%, rgb(110, 223, 0) 50%, rgb(0, 223, 187) 100%);"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(240, 29, 106); background-image: radial-gradient(circle at center 75%, rgb(255, 46, 25) 0%, rgb(146, 0, 255) 50%, rgb(0, 95, 255) 100%);"></div></div>
+
+			<div class="item"><div class="circle" style="background-color: rgb(255, 156, 25); background-image: radial-gradient(circle at center 75%, rgb(255, 220, 45) 0%, rgb(255, 150, 22) 50%, rgb(255, 79, 0) 100%);"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(14, 220, 222); background-image: radial-gradient(circle at center 75%, rgb(14, 230, 183) 0%, rgb(0, 230, 210) 50%, rgb(25, 201, 255) 100%);"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(0, 132, 255);"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(68, 190, 199);"></div></div>
+
+			<div class="item"><div class="circle" style="background-color: rgb(255, 195, 0);"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(250,60,76)"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(214,150,187)"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(19,207,19)"></div></div>
+
+			<div class="item"><div class="circle" style="background-color:rgb(255,126,41) ;"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(230,133,133);"></div></div>
+			<div class="item"><div class="circle" style="background-color:rgb(118,70,255) ;"></div></div>
+			<div class="item"><div class="circle" style="background-color: rgb(32,206,245);"></div></div>
+
+			<div class="item"><div class="circle" style="background-color:rgb(255,92,161) ;"></div></div>
+				
+		`;
+		}else if(typeOfContent == "dialog"){
+			content = ` 
+			<div class="dialog-content">
+				<p>`+ Ar1["content"] +`</p>
+			</div>
+			`;
+		}
+		
+	let dialog = ` 
+		<div class="DialogBox DialogBox-">
+		<div class="DialogBox-background"></div>
+		<div class="DialogBox-content">
+			<div class="DialogBox-header">
+				<h2>`+ header +`</h2>
+				<div class="DialogBox-close"></div>
+			</div>
+			<div class="DialogBox-body scrollbar">
+				<div class="content `+ typeOfContent +`">`+ content +`</div>
+			</div>
+			`+ Allbuttons +`
+		</div>
+	</div>
+		`;
+		$("body").append(dialog);
+	}
+
+	function selectMakeDialogBox(...Args){
+		
+	
+		if(Args[0] == "pick"){
+			return pick;
+		}else if(Args[0] == "dialog"){
+			let obj = Args[1];
+			let dialog = `
+		
+			`;
+			return dialog;
+		}
+
+	}
+	
+</script>
+<style type="text/css">
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-family: 'Segoe UI Regular';
+	background: #F0F2F5;
+}
+html{
+	 scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: 'Segoe UI Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url("assets/fonts/segoe/Segoe UI.woff");
+}
+
+
+@font-face {
+	font-family: 'Segoe UI Italic';
+	font-style: normal;
+	font-weight: normal;
+	src:url(assets/fonts/segoe/Segoe UI Bold Italic.woff);
+}
+
+
+@font-face {
+	font-family: 'Segoe UI Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: url(assets/fonts/segoe/Segoe UI Bold.woff);
+}
+
+
+@font-face {
+	font-family: 'Segoe UI Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src:url(assets/fonts/segoe/Segoe UI Bold Italic.woff);
+}
+.DialogBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.DialogBox .DialogBox-background{
+	width: 100%;
+	height: 100%;
+	background: red;
+	position: absolute;
+	background: #fff;
+	opacity: 0.75;
+
+}
+.DialogBox .DialogBox-content{
+	min-width: 350px;
+	max-width: 600px;
+	min-height: 150px;
+	background: #FFF;
+	z-index: 999;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0px 4px 32px -8px rgba(0,0,0,0.75);
+}
+.DialogBox .DialogBox-content .DialogBox-header{
+	padding: 15px;
+	border-bottom: 0.5px solid lightgray;
+	text-align: center;
+	position: relative;
+}
+.DialogBox .DialogBox-content .DialogBox-header h2{
+	font-size: 20px;
+	font-weight: 800;
+}
+.DialogBox .DialogBox-content .DialogBox-header .DialogBox-close{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: #E4E6EB;
+	position: absolute;
+	right: 20px;
+	top: 12.5px;
+	cursor: pointer;
+}
+.DialogBox .DialogBox-content .DialogBox-body{
+	padding: 0px 10px;
+	padding-right: 10px;
+	max-height: 500px;
+	overflow-y: auto;
+}
+.DialogBox .DialogBox-content .DialogBox-body .content{
+	padding: 10px;
+}
+.DialogBox .DialogBox-content .buttons{
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.DialogBox .DialogBox-content .buttons button{
+	padding: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 10px;
+	min-width: 70px;
+	background: #0084FF;
+	color: #FFF;
+	border:none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-weight: 600;
+	font-size: 15px;
+}
+.DialogBox .DialogBox-content .buttons button:first-child{
+	background: none;
+	color: #0084FF;
+}
+.DialogBox .DialogBox-content .buttons button:active{
+	transform: scale(0.9);
+}
+.DialogBox .DialogBox-content .DialogBox-body .content.pick{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 100%;
+	justify-content: center;
+
+}
+.DialogBox .DialogBox-content .DialogBox-body .content.pick .item{
+	width: 60px;
+	height: 60px;
+	border-radius: 20px;
+	margin: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.DialogBox .DialogBox-content .DialogBox-body .content.pick .item:hover{
+	background: #F0F2F5;
+}
+.DialogBox .DialogBox-content .DialogBox-body .content.pick .item .circle{
+	width: 50px;
+	height: 50px;
+	border-radius:50%;
+	background: black;
+	/*background-color: rgb(138, 57, 239); 
+	background-image: radial-gradient(circle at center 75%, rgb(138, 57, 239) 0%, rgb(138, 57, 239) 6%, rgb(114, 76, 236) 12%, rgb(63, 119, 230) 18%, rgb(11, 161, 223) 24%, rgb(1, 179, 170) 30%, rgb(1, 190, 105) 36%, rgb(1, 201, 45) 42%, rgb(121, 199, 24) 48%, rgb(217, 197, 7) 54%, rgb(255, 176, 1) 60%, rgb(255, 135, 1) 66%, rgb(255, 122, 1) 72%, rgb(255, 93, 6) 78%, rgb(255, 49, 14) 84%, rgb(255, 4, 23) 90%, rgb(255, 0, 24) 96%);*/
+}
+</style>
+</html>

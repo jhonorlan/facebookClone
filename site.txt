@@ -1,0 +1,12 @@
+
+Draw SVG
+https://www.drawsvg.org/drawsvg.html
+
+Copy Paste List
+https://copypastelist.com/
+
+Browse names
+https://www.familyeducation.com/baby-names/browse-names/surname 
+
+text to array
+<!-- https://www.seabreezecomputers.com/excel2array/ -->

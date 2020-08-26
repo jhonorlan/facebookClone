@@ -1,0 +1,198 @@
+body{
+	margin: 0;
+	font-family: arial,helvetica,sans-serif;
+	background: #FAFAFA;
+}
+instagram{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+instagram nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 53px;
+	border-bottom: 1px solid lightgray;
+}
+instagram nav .nav-content{
+	width: 70%;
+	height: 100%;
+	margin-left: 15%;
+	display: flex;
+}
+instagram nav .nav-content .left-content{
+	width: 38%;
+}
+instagram nav .nav-content .left-content .logo{
+	margin-top: 15px;
+}
+instagram nav .nav-content .center-content{
+	width: 23%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+instagram nav .nav-content .center-content .search-engine-container{
+	width: 100%;
+}
+instagram nav .nav-content .center-content .search-engine-container .search-engine{
+	border: 1px solid lightgray;
+	padding: 6px 12px;
+	font-size: 12px;
+	text-align: center;
+	cursor: text;
+	outline: none;
+	border-radius: 2px;
+}
+instagram nav .nav-content .center-content .search-engine-container .search-engine:focus{
+	text-align: left;
+}
+instagram nav .nav-content .right-content{
+	width: 38%;
+}
+instagram nav .nav-content .right-content .buttons{
+	padding: 5px;
+	float: right;
+}
+instagram nav .nav-content .right-content .buttons .item{
+	width: 30px;
+	height: 30px;
+	margin: 5px 6px;
+	float: right;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+instagram nav .nav-content .right-content .buttons .profile{
+	width: 28px;
+	height: 28px;
+	margin: 5px 6px;
+	float: right;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+instagram nav .nav-content .right-content .buttons .profile img{
+	max-width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+instagram .main-content{
+	margin-top: 50px;
+	padding-left: 13%;
+	padding-right: 13%;
+}
+instagram .main-content .content{
+	padding: 5px;
+}
+instagram .main-content .content .profile-container{
+	width: 100%;
+	height: 230px;
+	border-bottom: 1px solid lightgray;
+}
+instagram .main-content .content .profile-container .box{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+}
+instagram .main-content .content .profile-container .box #profile-picture{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+instagram .main-content .content .profile-container .info{
+	display: inline-block;
+	padding: 10px;
+}
+instagram .main-content .content .profile-container .info .top{
+	padding: 10px;
+	display: flex;
+	padding-bottom: 0px;
+}
+instagram .main-content .content .profile-container .info .top h2{
+	font-weight: 400;
+}
+instagram .main-content .content .profile-container .info .top button{
+	height: 30px;
+	width: 90px;
+	padding: 5px;
+	background: #FFF;
+	border: 1px solid lightgray;
+	font-weight: 600;
+	border-radius: 4px;
+	margin: 15px 15px;
+}
+instagram .main-content .content .profile-container .info .center{
+	display: inline-block;
+	padding: 10px;
+	padding-top: 0px;
+}
+instagram .main-content .content .profile-container .info .center span{
+	margin-right: 25px;
+}
+instagram .main-content .content .profile-container .info .top svg{
+	margin: 17px 0px;
+}
+instagram .main-content .content .profile-container .info .bottom{
+	padding: 10px;
+}
+instagram .main-content .content .profile-container .info .bottom span{
+	margin: 10px;
+}
+instagram .main-content .content .instagram-menu{
+	display: flex;
+	justify-content: center;
+}
+instagram .main-content .content .instagram-menu .item{
+	padding: 16px;
+	padding-left: 18px;
+	padding-right: 18px;
+	margin-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+instagram .main-content .content .instagram-menu .item.active{
+	border-top: 1px solid black;
+}
+instagram .main-content .content .instagram-menu .item span{
+	font-size: 14px;
+	cursor: pointer;
+	color: #8E8E8E;
+	user-select: none
+}
+instagram .main-content .content .instagram-menu .item.active span{
+		color: #050505;
+}
+instagram .main-content .content .instagram-menu .item svg{
+	margin-right: 5px;
+}
+instagram .main-content .content .grid-body{
+	display: grid;
+	min-height: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 20px;
+	row-gap: 20px;
+}
+instagram .main-content .content .grid-body .item{
+	cursor: pointer;
+}
+instagram .main-content .content .grid-body .item img{
+	max-width: 100%;
+	height: auto;
+}

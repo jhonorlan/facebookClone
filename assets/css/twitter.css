@@ -1,0 +1,527 @@
+body{
+	margin: 0;
+	font-family: arial,helvetica,sans-serif;
+	background: #F0F2F5;
+}
+twitter{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+twitter content{
+
+}
+twitter content .left-content{
+	position: fixed;
+	width: 22%;
+	height:100%;
+	background: ;
+	border-right: 0.5px solid #E6ECF0;
+}
+twitter content .left-content .list{
+	margin-left: 16%;
+}
+twitter content .left-content li{
+	list-style-type: none;
+	padding: 5px;
+	margin: 8px;
+	cursor: pointer;
+}
+twitter content .left-content li content{
+	display: inline-block;
+	border-radius: 25px;
+}
+twitter content .left-content li:hover content{
+	background: #e8f5fe;
+	color: #1DA1F2;
+	fill: #1DA1F2;
+}
+twitter content .left-content li .circle,twitter content .left-content li svg{
+	width: 28px;
+	display: inline-block;
+}
+twitter content .left-content li svg.fill{
+	fill: #1DA1F2;
+	color: #1DA1F2;
+}
+twitter content .left-content li .info{
+	display: inline-block;
+	margin: 5px 22px;
+	font-size: 20px;
+	font-weight: 600;
+}
+twitter content .left-content .tweet-button-container{
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+}
+twitter content .left-content .tweet-button-container .tweet-button{
+	width: 64%;
+	height: 18px;	
+	max-width: 70%;
+	max-height: 50px;
+	border-radius: 50px;
+	background: #1B98E4;
+	color: #fff;
+	text-align: center;
+	padding: 16px;
+	font-weight: 600;
+}
+twitter content .left-content .tweet-button-container .profile-button{
+	width: 70%;
+	padding: 5px;
+	border-radius: 50px;
+	cursor: pointer;
+
+}
+twitter content .left-content .tweet-button-container .profile-button .circle{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: black;
+	display: inline-block;
+}
+twitter content .left-content .tweet-button-container .profile-button .info{
+	display: inline-block;
+	position: absolute;
+}
+twitter content .left-content .tweet-button-container .profile-button .info a{
+	display: block;
+	margin-left: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	color: #050505;
+	font-size: 15px;
+}
+twitter content .left-content .tweet-button-container .profile-button .info span{
+	font-size: 14px;
+	margin-left: 10px;
+	color: #657786;
+}
+twitter content .center-content{
+	position: absolute;
+	left: 22%;
+	width: 45%;
+	background: ;
+	border-right: 1px solid #E6ECF0;
+}
+twitter content .center-content .main-container {
+	position: relative;
+	width: 100%;
+}
+twitter content .center-content .main-container #header{
+	height: 55px;
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	width: 45%;
+	z-index: 999;
+	border-left: 0.1px solid #E6ECF0;
+	border-right: 0.1px solid #E6ECF0;
+}
+twitter content .center-content #header .circle{
+	width: 40px;
+	height: 40px;
+	margin: 5px 25px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	fill: #1B98E4;
+	cursor: pointer;
+	float: left;
+}
+twitter content .center-content #header .circle:hover{
+	background: #
+}
+twitter content .center-content #header .name{
+	float: left;
+	margin-top: -5px;
+}
+twitter content .center-content #header .name h2{
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 600;
+}
+twitter content .center-content #header .circle svg{
+	width: 25px;
+}
+twitter content .center-content #body{
+	margin-top: 55px;
+}
+twitter content .center-content #body .cover-photo-container{
+	width: 100%;
+	height: 200px;
+	background-image: url('../../image/background-image.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 80% 72.5%;
+	cursor: pointer;
+	position: relative;
+}
+twitter content .center-content #body .cover-photo-container .profile-box{
+	position: absolute;
+	left: 15px;
+	width: 130px;
+	height: 130px;
+	border: 4px solid #FFF;
+	border-radius: 50%;
+	bottom: -30%;
+}
+twitter content .center-content #body .cover-photo-container .profile-box img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+twitter content .center-content #body .buttons{
+	padding: 5px;
+	height: 40px;
+}
+twitter content .center-content #body .buttons .item{
+	float: right;
+	min-width: 5px;
+	min-height: 5px;
+	border: 1px solid #1DA1F2;
+	margin: 5px;
+	border-radius: 50px;
+	padding: 8px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+twitter content .center-content #body .buttons .item svg{
+	width: 20px;
+	fill: #1DA1F2;
+}
+twitter content .center-content #body .buttons .item.follow{
+	padding: 8px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+twitter content .center-content #body .buttons .item:hover{
+	background: #e8f5fe;
+}
+twitter content .center-content #body .buttons .item span{
+	color: #1DA1F2;
+	font-weight: 600;
+} 
+twitter content .center-content #body .information{
+	padding: 10px;
+}
+twitter content .center-content #body .information span{
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+twitter content .center-content #body .information p{
+	margin: 2px 10px;
+	color: #657786;
+}
+twitter content .center-content #body .bio{
+	padding: 20px;
+	padding-top: 0px;
+	padding-bottom:10px;
+}
+twitter content .center-content #body .other {
+	padding-left: 20px;
+	padding-top: 0px;
+}
+twitter content .center-content #body .other span{
+	color: #657786;
+}
+twitter content .center-content #body .other span svg{
+	width: 20px;
+	fill: #657786;
+	margin-left: 5px;
+	display: inline-block;
+}
+twitter content .center-content #body .other span span{
+	display: inline;
+	margin-left: 5px;
+	font-size: 15px;
+}
+twitter content .center-content #body .following{
+	padding-left: 20px;
+	padding-top: 10px;
+}
+twitter content .center-content #body .following span{
+	margin: 5px;
+}
+twitter content .center-content #body .following span b{
+	margin-right: 5px;
+}
+twitter content .center-content #body .following span a{
+	font-size: 15px;
+	text-decoration: none;
+	color: #657786;
+}
+twitter content .center-content #body .twitter-menu{
+	display: flex;
+	width: 100%;
+	margin-top: 15px;
+}
+twitter content .center-content #body .twitter-menu .item{
+	width: 100%;
+	text-align: center;
+	padding: 14px;
+	cursor: pointer;
+	font-weight: 600;
+	color: #657786;
+	font-size: 15px;
+}
+twitter content .center-content #body .twitter-menu .item.active{
+	background: #F5FBFE;
+	color: #1DA1F2;
+	font-weight: 600;
+	border-bottom: 2px solid #1DA1F2;
+}
+twitter content .center-content #body .twitter-menu .item:hover{
+	background: #F5FBFE;
+	color: #1DA1F2;
+	font-weight: 600;
+}
+twitter content .center-content .user-post{
+	padding: 10px;
+	margin: 5px;
+	border-bottom: 1px solid lightgray;
+}
+twitter content .center-content .user-post .user-post-container{
+	padding: 5px;
+	cursor: pointer;
+
+}
+twitter content .center-content .user-post .user-post-container #header .circle{
+	width: 40px;
+	height: 40px;
+	margin: 0px 5px;
+	margin-right: 10px;
+	display: inline-block;
+}
+twitter content .center-content .user-post .user-post-container #header a{
+	text-decoration: none;
+	color: #050505;
+	font-weight: 600;
+	font-size: 15px;
+}
+twitter content .center-content .user-post .user-post-container #header span{
+	font-size: 14px;
+	color: #657786;
+}
+twitter content .center-content .user-post .user-post-container #footer{
+	display: flex;
+	margin-top: 15px;
+	width: 85%;
+}
+twitter content .center-content .user-post .user-post-container #footer .item{
+	width: 100%;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+twitter content .center-content .user-post .user-post-container #footer .item span{
+	font-size: 14px;
+}
+twitter content .center-content .user-post .user-post-container #footer .item svg{
+	width: 20px;
+	padding: 5px;
+	border-radius: 50%;
+}
+twitter content .center-content .user-post .user-post-container #footer .item:nth-child(1) svg:hover{
+	background: #e8f5fe;
+	fill: #1DA1F2;
+}
+twitter content .center-content .user-post .user-post-container #footer .item:nth-child(2) svg:hover{
+	background: #def2eb;
+	fill: #17bf63;
+}
+twitter content .center-content .user-post .user-post-container #footer .item:nth-child(3) svg:hover {
+	background: #f3e3eb;
+	fill: #e23b6f;
+}
+twitter content .center-content .user-post .user-post-container #footer .item:nth-child(4) svg:hover{
+	background: #dfeffa;
+	fill: #1DA1F2;
+}
+twitter content .center-content .user-post .user-post-container #footer .item:nth-child(5) svg:hover {
+	background: #dfeffa;
+	fill: #1DA1F2;
+}
+twitter content .center-content .user-post .user-post-container #image-content{
+	display: grid;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10px;
+	column-gap: 5px;
+	row-gap: 5px;
+}
+twitter content .center-content .user-post .user-post-container #image-content.style1{
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+	"one";
+}
+twitter content .center-content .user-post .user-post-container #image-content.style2{
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"one two";
+}
+twitter content .center-content .user-post .user-post-container #image-content.style3{
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	"one two"
+	"one three";
+}
+twitter content .center-content .user-post .user-post-container #image-content.style4{
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	"one two"
+	"three four";
+}
+twitter content .center-content .user-post .user-post-container #image-content img{
+	max-width: 100%;
+}
+twitter content .center-content .user-post .user-post-container #image-content img:nth-child(1){
+	border-radius: 15px;
+	grid-area: one;
+	border-top-left-radius: 15px;
+}
+twitter content .center-content .user-post .user-post-container #image-content img:nth-child(2){
+	grid-area: two;
+	border-top-right-radius: 15px;
+}
+twitter content .center-content .user-post .user-post-container #image-content img:nth-child(3){
+	grid-area: three;
+	border-bottom-left-radius: 15px;
+}
+twitter content .center-content .user-post .user-post-container #image-content img:nth-child(4){
+	grid-area: four;
+	border-bottom-right-radius: 15px;
+}
+twitter content .right-content{
+	background:;
+	width: 33%;
+	position: fixed;
+	right: 0;
+	height: 100%;
+	overflow-y: auto;
+}
+twitter content .right-content::-webkit-scrollbar-thumb {
+ 	display: none;
+}
+
+twitter content .right-content::-webkit-scrollbar{
+	display: none;
+}
+twitter content .right-content .main-content{
+	position: relative;
+	width: 100%;
+
+}
+twitter content .right-content .main-content #header{
+	height: 55px;
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	width: 33%;
+	border-left: 1px solid #E6ECF0;
+}
+twitter content .right-content .main-content #header .search-engine-container{
+	margin: 7px 35px;
+}
+twitter content .right-content .main-content #header .search-engine-container .search-engine{
+	padding: 10px 45px;
+	background: #E6ECF0;
+	border-radius: 25px;
+	width: 70%;
+	outline: none;
+	border: 1px solid #E6ECF0;
+	cursor: text;
+}
+twitter content .right-content .main-content #header .search-engine-container .search-engine:focus{
+	border: 1px solid #1B98E4;
+	background: #FFF;
+
+}
+twitter content .right-content .main-content #header .search-engine-container .search-engine:focus svg{
+	fill: #1B98E4;
+}
+twitter content .right-content .main-content #header .search-engine-container svg{
+	position: absolute;
+	width: 20px;
+	margin: 10px 15px;
+	fill: #8594A0;
+}
+twitter content .right-content .main-content #body{
+	margin-top: 55px;
+	padding-left: 45px;
+	padding-top: 10px;
+}
+twitter content .right-content .main-content #body .container .header{
+	padding: 10px;
+	border-bottom: 1px solid #E6ECF0;
+}
+twitter content .right-content .main-content #body .container .header span{
+	font-size: 20px;
+	font-weight: 600;
+}
+twitter content .right-content .main-content #body .container .grid-body{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 250px;
+	column-gap: 2px;
+	row-gap: 2px;
+}
+twitter content .right-content .main-content #body .container .grid-body .item img{
+	max-width: 100%;
+	cursor: pointer;
+}
+twitter content .right-content .main-content #body .container .grid-body .item:nth-child(1) img{
+	border-top-left-radius: 10px;
+}
+twitter content .right-content .main-content #body .container .grid-body .item:nth-child(3) img{
+	border-top-right-radius: 10px;
+}
+twitter content .right-content .main-content #body .container .grid-body .item:nth-child(7) img{
+	border-bottom-left-radius: 10px
+}
+twitter content .right-content .main-content #body .container .grid-body .item:nth-child(9) img{
+	border-bottom-right-radius: 10px
+}
+
+twitter content .right-content .main-content #body .container .graph-body{
+	
+}
+twitter content .right-content .main-content #body .container .graph-body .skill-con{
+	padding: 5px;
+	margin: 5px;
+}
+twitter content .right-content .main-content #body .container .graph-body .skill-con .graph{
+	width: 90%;
+	height: 20px;
+	background: #E6ECF0;
+	border-radius: 25px;
+	position: relative;
+	cursor: pointer;
+}
+twitter content .right-content .main-content #body .container .graph-body .skill-con .graph .value{
+	height: 20px;
+	background: #1B98E4;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+}
+twitter content .right-content .main-content #body .container .graph-body .skill-con .graph .value label{
+	font-size: 11px;
+	color: #fff;
+	user-select: none;
+	cursor: pointer;
+}
+

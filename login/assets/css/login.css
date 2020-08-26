@@ -1,0 +1,404 @@
+*{
+		margin: 0;
+	}
+	body{
+		margin: 0;
+		background: #E9EBEE;
+		font-family: helvetica,arial,sans-serif;
+		position: relative;
+	}
+	facebook.old-des .header{
+		width: 100%;
+		height: 83px;
+		background: #415E9B;
+	
+	}
+	facebook.old-des .header .content{
+		width: 71%;
+		height: 100%;
+		margin-left: 14%;
+		position: relative;
+	}
+	facebook.old-des .header .content img{
+		height:75px;
+		margin:8px -25px;
+		display: inline-block;
+	}
+	facebook.old-des .header .content .right-content{
+		float: right;
+		height: 100%;
+		display: flex;
+	}
+	facebook.old-des .header .content .right-content .form-group{
+		padding: 8px;
+	}
+	facebook.old-des .header .content .right-content .form-group label{
+      color: #fff;
+      font-size: 12px;
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 5px;
+	}
+	facebook.old-des .header .content .right-content .form-group input{
+       padding: 3px;
+       border:1px solid #1D2A5B;
+       outline: none;
+       width: 145px;
+       display: block;
+	}
+	facebook.old-des .header .content .right-content .form-group a{
+		font-size: 12px;
+		color: #9CB4D8;
+		text-decoration: none;
+	}
+	facebook.old-des .header .content .right-content .submit{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	facebook.old-des .header .content .right-content .submit input{
+		padding: 3px;
+		padding-left: 4px;
+		padding-right: 4px;
+		margin-top: 5px;
+		background: #4267B2;
+		color: #fff;
+		border:1px solid #29487D;	
+		font-weight: 600;
+		font-size: 12px;
+		margin-left: 8px;
+		cursor: pointer;
+		outline: none;
+	}
+	facebook.old-des .header .content .right-content .submit input:hover{
+		background: #415E9B;
+	}
+	facebook.old-des .body{
+		width: 100%;
+		display: flex;
+		padding-top: 20px;
+		padding-bottom: 25px;
+	}
+	facebook.old-des .body .container1{
+		width: 58%;
+		height: 100%;
+		margin-left: 14%;
+	}
+	facebook.old-des .body .container2{
+		width: 42%;
+		height: 100%;
+		margin-right: 14%;
+	}
+	facebook.old-des .body .container h1{
+		color: #333333;
+		font-size: 34px;
+ 	}
+ 	facebook.old-des .body .container span{
+ 		color: #333333;
+ 		font-weight: 400 !important;
+ 		margin-top: 10px;
+ 		font-size: 20px;
+		display: flex;
+ 	}
+ 	facebook.old-des .body .container .form-group{
+ 		padding: 5px;
+ 		display: flex;
+ 		align-items: center;
+ 		position: relative;
+ 	}
+ 	facebook.old-des .body .container .form-group input{
+ 		padding: 8px  10px;
+ 		font-size: 18px;
+ 		border-radius: 5px;
+ 		border:1px solid #BDC7D8;
+ 		outline: none;
+ 		width: 100%;
+ 	}
+ 	facebook.old-des .body .container .form-group input.error{
+ 		border:1px solid #FF0000;
+ 	}
+ 	facebook.old-des .body .container .form-group .desc{
+ 		position: absolute;
+ 		right: 105%;
+ 		min-width: 120px;
+ 		max-width:300px;
+ 		padding: 13px;
+ 		border-radius: 5px;
+ 		background: #BE4B49;
+ 		color: #fff;
+ 		z-index: 999;
+ 		display: flex;
+ 		justify-content: center;
+ 		align-items: center;
+ 		border:1px solid #9E3836;
+ 		visibility: hidden;
+
+ 	}
+ 	facebook.old-des .body .container .form-group .desc span{
+ 		color: #fff;
+ 		font-size: 13px;
+ 		margin-top: -0px;
+ 		line-height: 18px;
+ 	}
+ 	facebook.old-des .body .container .form-group .desc::before{
+ 		content: "";
+ 		width: 0;
+ 		height: 0;
+ 		border-top: 10px solid transparent;
+ 		border-bottom: 10px solid transparent;
+ 		border-left:10px solid #BE4B49;
+ 		position: absolute;
+		right: -10px;
+
+ 	}
+ 	facebook.old-des .body .container .form-group svg{
+ 		position: absolute;
+ 		right: 12px;
+ 		fill: #B94A48;
+ 		display: none;
+ 	}
+ 	facebook.old-des .body .container .form-group.half svg{
+ 		right: 53%;
+ 	}
+ 	facebook.old-des .body .container .form-group.half{
+ 		display: flex;
+ 	}
+ 	facebook.old-des .body .container .form-group.half input{
+ 		width: 48%;
+ 		display: inline-block;
+ 	}
+ 	facebook.old-des .body .container .form-group.half input:nth-child(2){
+ 		margin-left: 2.5%;
+ 	}
+	facebook.old-des .body .container .form-group h4{
+		color: #90949C
+	}
+	facebook.old-des .body .container .form-group select{
+		padding: 4px 8px;
+		margin: 2px;
+		outline: none;
+		border:1px solid #BDC7D8;
+	}
+	facebook.old-des .body .container .form-group .g{
+		margin: 5px;
+		margin-left:30px;
+		position: relative;
+		cursor: pointer;
+	}
+	facebook.old-des .body .container .form-group .g input[type="radio"]{
+       display: inline-block;
+       position: absolute;
+       left: -40px;
+       top: 10px;
+	}
+	facebook.old-des .body .container .form-group .g span{
+		margin-left: 10px;
+		color: #1D2129;
+		font-size: 18px;
+	}
+	facebook.old-des .body .container .form-group p{
+		font-size: 11px;
+		color: #90949C;
+	}
+	facebook.old-des .body .container .form-group p a{
+		text-decoration: none;
+		color: #385898;
+	}
+	facebook.old-des .body .container .form-group .submit{
+		margin-top: 10px;
+		width: 200px;
+		background: #6CA957;
+		color: #fff;
+		border:1px solid #3B6E22;
+		cursor: pointer;
+	}
+	facebook.old-des .body .container .default{
+		width: 90%;
+		padding-top: 20px;
+	}
+	facebook.old-des .body .container .default h2{
+		font-size: 20px;
+		color: #0E385F;
+		line-height:29px;
+	}
+	facebook.old-des .body .container .default img{
+		width: 100%;
+	}
+	facebook.old-des .body .container .last{
+		padding: 5px;
+		margin-top: 20px;
+	}
+	facebook.old-des .body .container .last a{
+		text-decoration: none;
+		color: #3E5B99;
+		font-weight: 600;
+		margin-right: 5px;
+	}
+	facebook.old-des .body .container .last span{
+		font-size: 13px;
+		font-weight: 600;
+		color: #666666;
+	}
+
+
+	facebook.new-des main{
+		width: 100%;
+		height: 120vh;
+		background: #F0F2F5;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+	facebook.new-des main .areas{
+		width: 72.5%;
+		height: 70%;
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+	}
+	facebook.new-des main .areas .area1{
+		text-align: left;
+		padding: 5px 2.5px;
+	}
+	facebook.new-des main .areas .area1 div{
+		margin-top: 10%;
+	}
+	facebook.new-des main .areas .area1 div img{
+		height: 105px;
+		margin-left: -30px;
+	}
+	facebook.new-des main .areas .area1 div p{
+		margin: 0px;
+		font-size: 27px;
+		max-width: 420px;
+		margin-top: -10px;
+	}
+	facebook.new-des main .areas .area2{
+		margin-top: 20px;
+
+	}
+	facebook.new-des main .areas .area2 .box{
+		background: #FFF;
+		border-radius: 10px;
+		padding: 10px;
+		box-shadow: -2px 6px 22px -11px rgba(0,0,0,0.75);
+	}
+	facebook.new-des main .areas .area2 .box .form-group{
+		padding: 6px;
+	}
+	facebook.new-des main .areas .area2 .box .form-group input{
+		padding: 16px 18px;
+		width: 89%;
+		border-radius: 4px;
+		border:1px solid #DDDFE2;
+		outline: none;
+		font-size: 17px;
+		color: #1d2129;
+	}
+	facebook.new-des main .areas .area2 .box .form-group .login-button{
+		width: 100%;
+		background: #1877F2;
+		padding: 11px;
+		color: #FFF;
+		font-weight: 600;
+		font-size: 20px;
+		border-radius: 6px;
+		cursor: pointer;
+	}
+	facebook.new-des main .areas .area2 .box .form-group.link{
+		text-align: center;
+	}
+	facebook.new-des main .areas .area2 .box .form-group.link a{
+		color: #1877f2;
+		font-size: 14px;
+		text-decoration: none;
+	}
+	facebook.new-des main .areas .area2 .box .form-group.hr{
+		padding: 12px;
+	}
+	facebook.new-des main .areas .area2 .box .form-group.hr hr{
+		border:0.2px solid #F0F2F5;	
+	}
+	facebook.new-des main .areas .area2 .box .form-group.create{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		padding: 12px;
+	}
+	facebook.new-des main .areas .area2 .box .form-group.create .create-an-account-button{
+		width: 57%;
+		background: #42B72A;
+		padding: 14px;
+		color: #FFF;
+		font-size: 17px;
+		border:none;
+		font-weight: 600;
+		border-radius: 6px;
+			cursor: pointer;
+	}
+	facebook.new-des main .areas .area2 .last{
+		padding: 5px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	facebook.new-des main .areas .area2 .last a{
+		text-decoration: none;
+		color: #050505;
+		font-weight: 600;
+		margin-right: 5px;
+	}
+	facebook.new-des main .areas .area2 .last span{
+		font-size: 14px;
+		color: #050505;
+	}
+
+
+
+
+	.footer{
+		background: #fff;
+		padding-top: 40px;
+		padding-left: 14%;
+		padding-bottom: 20px;
+	}
+	.footer .lang-list{
+		display: flex;
+		margin: 0;
+	}
+	.footer .lang-list span{
+		font-size: 12px;
+		margin-right:10px;
+		color: #737373;
+	}
+  	.footer .lang-list li{
+		list-style-type: none;
+		margin-right: 10px;
+		font-size: 12px;
+		color: #385898;
+		cursor: pointer;
+  	}
+  	.footer .lang-list li:hover{
+  		text-decoration:  underline;
+  	}
+  	.footer .all-list{
+	   	margin: 0;
+	}
+  	.footer .all-list li{
+		list-style-type: none;
+		margin-right: 20px;
+		font-size: 12px;
+		color: #385898;
+		cursor: pointer;
+		display: inline-block;
+  	}
+  	.footer .all-list li:hover{
+  		text-decoration:  underline;
+  	}
+  	 .footer hr{
+  		margin-top: 10px;
+  		margin-bottom: 10px;
+  		width: 85%;
+  	}

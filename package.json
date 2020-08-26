@@ -1,0 +1,25 @@
+{
+  "name": "facebook-clone",
+  "version": "1.0.0",
+  "description": "An Aplication that same as Facebook",
+  "main": "server/server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "author": "Jhon Orlan Tero",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "localtunnel": "^2.0.0",
+    "moment": "^2.27.0",
+    "socket.io": "^2.3.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

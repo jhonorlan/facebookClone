@@ -1,0 +1,274 @@
+	*{
+		margin: 0;
+		box-sizing: border-box;
+	}
+	  body{
+    	background: #F0F2F5;
+    	font-family: 'Segoe UI Regular';
+    }
+	@font-face {
+	font-family: 'Segoe UI Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../assets/fonts/segoe/Segoe UI.woff");
+	}
+
+
+	@font-face {
+	font-family: 'Segoe UI Italic';
+	font-style: normal;
+	font-weight: normal;
+	src:url("../assets/fonts/segoe/Segoe UI Bold Italic.woff");
+	}
+
+
+	@font-face {
+	font-family: 'Segoe UI Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../assets/fonts/segoe/Segoe UI Bold.woff");
+	}
+
+
+	@font-face {
+	font-family: 'Segoe UI Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src:url("../assets/fonts/segoe/Segoe UI Bold Italic.woff");
+	}
+
+	container{
+		display: grid;
+		height: 100vh;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 20px;
+		padding-top: 30px;
+		grid-template-areas: 
+		"code main list";
+		margin-left: 5%;
+	}
+	container main{
+		width: 350px;
+		min-height: 500px;
+		background: #FFF;
+		border-top-left-radius: 10px;
+		grid-area: "main";
+	}
+	.pause-generating{
+		padding: 10px;
+		background: #1b262c;
+		border-radius: 10px;
+	}
+	.pause-generating .header{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 100px;
+		color: #fff;
+	}
+	.pause-generating .header h2{
+		color: #fff;
+		font-size: 30px;
+	}
+	.pause-generating .body{
+		padding: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 200px;
+	}
+	.pause-generating .body .start{
+		padding: 10px;
+		width: 150px;
+		border-radius: 5px;
+		background: #FFF;
+		color: #050505;
+		font-weight: 600;
+		font-size: 16px;
+		text-align: center;
+		cursor: pointer;
+		user-select: none;
+		margin: 10px;
+	}
+	.pause-generating .body .start:active{
+		transform: scale(0.9);
+	}
+	container main #header .box{
+		padding: 10px;
+		height: 150px;
+		background: #1b262c;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+	}
+	container main #header .box .circle{
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		background: #0f4c75;
+		border-radius: 50%;
+		bottom: -20px;
+	}
+	container main #header .box .circle img{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+	container main #header .name-con{
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	container main #body{
+		padding: 10px;
+	}
+	container main #body li{
+		list-style-type: none;
+		display: flex;
+		padding: 10px;
+		cursor: pointer;
+		margin: 5px;
+		border-radius: 4px;
+	}
+	container main #body li p{
+		width: 150px;
+	}
+	container main #body li:hover{
+			background: #F0F2F5;
+	}
+	.buttons{
+		position: fixed;
+		bottom: 0px;
+
+		height: 60px;
+		right: 10px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	button{
+		height: 40px;
+		padding: 10px;
+		border-radius: 5px;
+		color: #fff;
+		background: #1877F2;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		margin-right: 10px;
+	}
+	button.disabled{
+		background: #93b5e1;
+	}
+	container main .form-group button:active{
+		transform: scale(0.9);
+	}
+
+	.user-lists{
+		padding: 10px;
+		width: 350px;
+		background: #FFF;
+		border-radius: 10px;
+		min-height: 500px;
+		max-height: 500px;
+		padding-right: 0px;
+		grid-area: "list";
+	}
+	.user-lists #header{
+		padding-bottom: 5px;
+	}
+	.user-lists #body{
+		padding: 5px;
+		max-height: 400px;
+		overflow-y: auto;
+		transform: rotate(-180deg);
+		direction: rtl;
+	}
+	.user-lists #body .all-user-list-database{
+		transform: rotate(180deg);
+		direction: ltr;
+	}
+	.user-lists #body .all-user-list-array{
+		transform: rotate(180deg);
+		direction: ltr;
+	}
+	.user-lists #body li{
+		list-style-type: none;
+		padding: 10px;
+		cursor: pointer;
+	}
+	.user-lists #body li .header{
+		display: flex;
+		align-items: center;
+		padding: 5px;
+		border-radius: 10px;
+	}
+	.user-lists #body li:hover  .header{
+			background: #F0F2F5;
+	}
+	.user-lists #body li .circle{
+		width: 40px;
+		height: 40px;
+		background: black;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	.user-lists #body li .box{
+		margin-left: 10px;
+	}
+	.user-lists #body li .box a{
+		font-weight: 600;
+		color: #050505;
+		text-decoration: none;
+	}
+	.user-lists #body li .info{
+		min-height: 100px;
+		width: 100%;
+		background: #F0F2F5;
+		margin-top: 10px;
+		border-radius: 5px;
+		display: none;
+	}
+	.user-lists #body li .info p{
+		display:inline-block;
+		min-width: 80px;
+		margin-right: 10px;
+	}
+	.user-lists #body li .info p span{
+		font-size: 14px;
+	}
+	.user-lists #body li .info .item{
+		padding: 5px 10px;
+	}
+	.area-code{
+		grid-area: "code";
+		padding: 10px;
+		width: 350px;
+		background: #FFF;
+		border-radius: 10px;
+		min-height: 500px;
+		max-height: 500px;
+		padding-right: 0px;
+		padding-left: 0px;
+
+	}
+	.area-code #header{
+		padding: 10px;
+		padding-top: 0px;
+	}
+	.area-code #body{
+		background: #1B262C;
+		padding: 10px;
+		padding-left: 0px;
+		height: 400px;
+		padding: 10px;
+		color: #FFF;
+		font-size: 15px;
+		max-height: 400px;
+		overflow-y: auto;
+	}
+	@media screen and (max-width: 1125px) {
+	
+	}

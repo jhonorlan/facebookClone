@@ -1,0 +1,25 @@
+.layout{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background: transparent;
+	width: 200px;
+	height: 220px;
+	border-radius: 10px;
+
+	background: transparent;	
+}
+.layout .item{
+	padding: 5px;
+	background: #fff;
+	height: 50px;
+	margin: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.layout .item img{
+	width: 30px
+}
