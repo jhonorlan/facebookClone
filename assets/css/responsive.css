@@ -1,0 +1,185 @@
+@media screen and (max-width: 1125px) {
+	.user-post-content {
+		padding-left: 0%;
+	}
+	.post-main-container{
+		margin-left:3%;
+	}
+	.home-body .body .center-content .home-content story .story-container .item:last-child{
+		display: none;
+	}
+	.home-body .body .center-content .home-content story .story-container{
+		padding-left: 0;
+		margin-left: -8%;
+	}
+	.home-body .body .center-content .home-content story .story-container .item{
+		width: 118px;
+	}
+	.home-body .body .center-content .home-content story .story-container .next{
+		right: 5%;
+	}
+	facebook nav .nav-right .circles .profile{
+		display: none;
+	}
+	.facebook-right-content .main-content .user-post-container{
+		width: auto;
+	}
+}
+@media screen and (max-width: 1100px) {
+	facebook nav .nav-left{
+		width: 22%;
+	}
+	facebook nav .nav-left  .search-engine-container .search-engine{
+		width: 0% !important;
+		padding: 10px;
+		padding-top: 12px;
+		padding-left: 30px;
+	}
+	facebook nav .nav-left  .search-engine-container svg {
+		margin: 18px 14px;
+	}
+	facebook nav .nav-center{
+		width: 52%;
+	}
+	facebook nav .nav-center .item.more {
+		display: flex;
+	}
+	facebook nav .nav-center .item.gaming{
+		display: none;
+	}
+	facebook nav .nav-right .circles .profile{
+		display: none;
+	}
+  .home-body .body .left-content{
+  	display: none;
+  }
+  .home-body .body .center-content{
+  	left: 3.2%;
+  	width: calc(52% + 20%);
+  	display: flex;
+	justify-content: center;
+  }
+  	.home-body .body .center-content .home-content story .story-container .item:last-child{
+		display: flex;
+	}
+	.home-body .body .center-content .home-content story .story-container .next{
+		right: 1%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.home-body .body .right-content{
+		display: none;
+	}
+	.home-body .body .center-content{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		left: 0;
+	}
+	.user-post-content {
+		padding-left: 6%;
+	}
+	.post-main-container{
+		margin-left: 10%;
+	}
+	.home-body .body .center-content .home-content story .story-container .next{
+		right: 1%;
+	}
+	.watch-body .facebook-left-content{
+		display: none;
+	}
+	.watch-body .facebook-right-content{
+		width: 100% !important;
+		left: 0;
+		padding: 0px;
+	}
+	
+
+	/*Profile*/
+
+	facebook .profile-body-content .content{
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"Left Left"
+		"Right Right";
+		grid-row-gap: 10px;
+		width: 100%;
+	}
+	facebook .profile-body-content .content .left-content{
+		min-width: 98.5% !important;
+		max-width: auto;
+	}
+	.user-profile-all-post-content .user-post-container{
+		width: 98.5% !important;
+	}
+	facebook .profile-body-content .content .right-content .post-main-container{
+		width: 95.5% !important;
+}
+}
+@media screen and (max-width: 770px) {
+	facebook nav .nav-center .item{
+		display: none;
+	}
+	facebook nav .nav-center{
+		width: 38%;
+	}
+	facebook nav .nav-center .item.more{
+		display: flex;
+	}
+	facebook nav .nav-right{
+		width: 50%;
+	}
+	facebook nav .nav-left{
+		width: 20%;
+	}
+}
+@media screen and (max-width: 725px){
+	facebook .body .profile-menu .menu .profile-menu-button .item:last-child{
+		display: none;
+	}
+}
+@media screen and (max-width: 700px) {
+	facebook .body .profile-menu .menu .profile-menu-button .item:nth-child(5){
+		display: none;
+	}
+	.home-body .body .center-content .home-content story .story-container .item:last-child{
+		display: none;
+	}
+	.home-body .body .center-content .home-content story .story-container .next{
+		right: -2%;
+	}
+	.home-body .body .center-content .home-content story .story-container{
+		padding-left: 0;
+		margin-left: -5%;
+		padding: 0px;
+	}
+	.home-body .body .center-content{
+		display: flex;
+		justify-content: center;
+		left: 0;
+	}
+	.user-post-content{
+		padding-top: 5px;
+		padding-left: 0;
+	}
+	.user-post-content .user-post-container{
+		margin-left: 0px;
+	}
+	.post-main-container{
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 700px){
+	.home-body .body .center-content{
+		display: flex;
+		justify-content: center;
+		left: 0;
+		padding-left: 10%;
+		padding-right: 5%;
+	}
+}
+@media screen and (max-width: 695px){
+	facebook .body .profile-menu .menu .profile-menu-button .item:nth-child(4){
+		display: none;
+	}
+}

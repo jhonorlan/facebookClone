@@ -4,6 +4,6 @@ session_start();
 
 
 $name = $_GET["name"];
-fbsvg($name);
+echo fbsvg($name);
 
 ?>

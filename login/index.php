@@ -242,6 +242,6 @@ if(isset($_SESSION["id"])){
 			</div>
 		</div>
 </body>
-<script type="text/javascript" src="assets/js/myscripts.js"></script>
-
+<script type="text/javascript" src="../assets/js/cookie.js"></script>
+<script type="text/javascript" src="assets/js/login.js"></script>
 </html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<main>
+		<h2>Gradient Colors</h2>
+		<content></content>
+	</main>
+
+</body>
+<style type="text/css">
+	body{
+		background: #13272E;
+		font-family: Segoe UI Regular;
+	}
+	@font-face {
+		font-family: 'Segoe UI Regular';
+		font-style: normal;
+		font-weight: normal;
+		src: url("../assets/fonts/segoe/Segoe UI.woff");
+	}
+
+	main{
+		padding: 10px;
+	}
+	main h2{
+		color: #FFF;
+	}
+	main content{
+		padding: 10px;
+	}
+	main content .item{
+		float: left;
+		width: 300px;
+		height: 200px;
+		border-radius: 5px;
+		background: black;
+		margin: 9px;
+		position: relative;
+		cursor: pointer;
+	}
+	main content .item:active{
+		transform: scale(0.9);
+	}
+	main content .item .top{
+		padding:5px;
+		background: #FFF;
+		color: #050505;
+		position: absolute;
+		margin: 5px;
+		border-radius: 5px;
+		font-size: 14px;
+		right: 5px;
+		user-select: none;
+	}
+	main content .item .description{
+		position: absolute;
+		top: -50px;
+		padding:10px;
+		border-radius: 4px;
+		background: #FFF;
+		color: #050505;
+		cursor: pointer;
+		text-align: center;
+		visibility: hidden;
+		user-select: none;
+	}
+	main content .item:hover .description{
+		visibility: visible;
+	}
+	.pop-container{
+		width:100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+	.pop-container .code-container{
+		width: 450px;
+		background: #FFF;
+		z-index: 2;
+		border-radius: 5px;
+		padding: 10px;
+	}
+	.pop-container .code-container .code-textarea{
+		padding: 10px;
+		width: 400;
+		outline: none;
+		color: #050505;
+
+	}
+	.pop-container .background{
+		cursor: pointer;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		z-index: 1;
+
+	}
+
+</style>
+<script type="text/javascript">
+	function init(gradient,direction){
+		$.getJSON('../assets/json/color.json',  function(json, textStatus) {
+			for(i = 0; i < json.length ; i++){
+				let colors = json[i]["colors"];
+				let name = json[i]["name"];
+				let length = colors.length;
+				let span = [];
+				let output = `
+				<div class="item" style="background:`+ gradient +`(`+ direction +`,`;
+
+				for(j = 0 ; j < length; j++){
+					if(j == length - 1){
+						output += colors[j];
+					}else{
+						output += colors[j] + ",";
+					}
+					span.push(colors[j]);
+				}
+
+				output += `)">
+					<div class="top">
+						<span>`;
+				for(k = 0; k < span.length; k++){
+					if(k == span.length - 1){
+						output += span[k];
+					}else{	
+						output += span[k] + " => ";
+					}
+					
+				}
+				output += `</span>
+					</div>
+					<div class="description">`+ name +`</div>
+				</div>
+				`;
+
+				$("content").append(output);
+			}
+		});
+	}
+	$(document).on("click",".item",function(){
+		let name = $(this).find("div").last().html();
+		$.getJSON('../assets/json/color.json',  function(json, textStatus) {
+
+			for(i = 0; i < json.length; i++){
+				if(json[i]["name"] == name){
+					let color = json[i]["colors"];
+					let code = "background:linear-gradient(to right,"+color+")";
+					createNewPopup(code,code);
+				}
+			}
+			
+		});
+	
+	});
+	$(document).on("click",".background",function(){
+		$(this).parent().remove();
+	});
+	function createNewPopup(code,background){
+		let output = `
+			<div class="pop-container">
+				<div class="background" style="`+background+`"></div>
+				<div class="code-container">
+					<div class="code-textarea" contenteditable>`+code+`</div>
+				</div>
+			</div>
+		`;
+		$("body").append(output)
+	}
+	$(document).on("input",".code-textarea",function(){
+		let bg = $(this).html();
+		bg = bg.replace("background:","");
+		$(".background").css("background",bg)
+	});
+	init("linear-gradient","to left");
+</script>
+</html>

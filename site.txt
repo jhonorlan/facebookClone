@@ -10,3 +10,24 @@ https://www.familyeducation.com/baby-names/browse-names/surname
 
 text to array
 <!-- https://www.seabreezecomputers.com/excel2array/ -->
+
+Speech to text
+https://speech-to-text-demo.ng.bluemix.net/
+
+https://wtools.io/convert-json-to-php-array
+
+https://jsonformatter.curiousconcept.com/#
+
+Image online Resizer
+https://redketchup.io/bulk-image-resizer
+
+Sass Compiler
+http://beautifytools.com/sass-compiler.php
+
+CSS => Sass Css => Scss
+https://sebastianpontow.de/css2compass/
+
+https://beautifier.io/
+https://javascript-minifier.com/
+
+https://socket.io/docs/emit-cheatsheet/

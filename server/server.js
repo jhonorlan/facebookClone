@@ -2,7 +2,7 @@ const socket = require("socket.io"),
 	express = require("express"),
 	https = require("https"),
 	http = require("http"),
-	moment =  require("moment"),
+	path = require("path"),
 	port = process.env.PORT || 3001;
 
 const fs = require('fs') 
@@ -18,13 +18,21 @@ fs.writeFile('port.txt', "" + port, (err) => {
 var app = express();
 var http_server = http.createServer(app).listen(port);
 
+function redirectToLandingPage(){
+	
+	app.set('view engine', 'ejs')
+	app.get('/',function(req,res){
 
-function emitNewOrder(http_server){
+		console.log( path.join(__dirname, '../'))
+	})
+}
+
+function manage(http_server){
 
 	var io = socket.listen(http_server);
 
 	io.sockets.on('connection',function (socket){
-		
+		socket.emit('connection');
 		socket.on("new_message",function(data){
 			io.emit("new_message",data);
 		});
@@ -34,6 +42,17 @@ function emitNewOrder(http_server){
 		socket.on("fetchinbox",function(data){
 			io.emit("fetchinbox",data);
 		});
+		socket.on("send_call_request",function(data){
+			io.emit("send_call_request",data);
+		});
+		socket.on("accept_call_request",function(data){
+			io.emit("accept_call_request",data);
+		});
+		socket.on("create_room",function(data){
+			io.emit("create_room",data);
+			console.log("create_room")
+		})
+
 
 		// Reaction
 		socket.on("react-to-post",function(data){
@@ -47,7 +66,25 @@ function emitNewOrder(http_server){
 			io.emit("new-notification",data);
 		});
 		
-	});
-}
 
-emitNewOrder(http_server);
+		// Friend System
+
+		socket.on("send-friend-request",function(data){
+			io.emit("send-friend-request",data);
+		});
+		socket.on("cancel-friend-request",function(data){
+			io.emit("cancel-friend-request",data);
+		});
+		socket.on("accept-friend-request",function(data){
+			io.emit("accept-friend-request",data);
+		});
+
+	});
+	io.sockets.on('disconnect',function(socket){
+		socket.emit('disconnected');
+	});
+
+
+}
+redirectToLandingPage()
+manage(http_server)

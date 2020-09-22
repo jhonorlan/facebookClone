@@ -1,0 +1,4960 @@
+//colors
+
+$color_athens_gray_approx: #f0f2f5
+$white: #fff
+$red: red
+$black_75: rgba(0,0,0,0.75)
+$black_85: #242526
+$color_shuttle_gray_approx: #65676b
+//main color 
+$color_azure_radiance_approx: #1877f2
+$color_zumthor_approx: #e7f3ff
+$color_amaranth_approx: #f02849
+$color_black_rock_approx: rgb(3,3,39)
+$white_100: rgba(255,255,255,1)
+$black: black
+$color_alto_approx:  lightgray
+$color_black_approx: #050505
+$color_mystic_approx: #e6ecf0
+$color_curious_blue_approx: #1b98e4
+$gray: gray
+$black_90: rgba(0,0,0,0.90)
+$color_dodger_blue_approx: #4080ff
+$concrete: #f2f2f2
+$mercury: #e5e5e5
+$color_mischka_approx: #d8dadf
+$color_oslo_gray_approx: #83868a
+$color_ghost_approx: #c4c5c9
+$color_scorpion_approx: #71686b
+$color_tana_approx: #ddd9bc
+$black_100: rgba(0,0,0,1)
+$color_black_haze_approx: #ebeeee
+$color_mariner_approx: #1771e6
+$color_shark_approx: rgba(28,30,33,1)
+$color_heather_approx: #bec2c9
+$color_silver_sand_approx: #bcc0c4
+$color_mercury_approx: rgba(230,230,230,1)
+$color_wild_sand_approx: #f5f5f5
+$color_silver_chalice_approx: #9f9f9f
+$color_manatee_approx: #90949c
+$color_royal_blue_approx: #654eee
+$color_jordy_blue_approx: #81b9f5
+$color_amethyst_approx: #a84ad9
+$color_cranberry_approx: #e45283
+$color_woodsmoke_approx: #18191a
+$color_mine_shaft_approx: #303030
+
+
+//Border-radius
+$borderradius_4px: 4px
+$borderradius_5px: 5px
+$borderradius_10px: 10px
+$borderradius_15px: 15px
+$borderradius_25px: 25px
+$borderradius_10per: 10%
+$borderradius_25per: 25%
+$borderradius_50per: 50%
+
+//Padding 
+
+$padding_5px: 5px
+$padding_2px: 2px
+$padding_8px: 8px
+$padding_10px: 10px
+$padding_15px: 15px
+$padding_20px: 20px
+$padding_25px: 25px
+$padding_30px: 30px
+
+//Margin
+$margin_0: 0
+$margin_1px: 1px
+$margin_2_5px: 2.5px
+$margin_5px: 5px
+$margin_10px: 10px 
+//fonts
+
+//Transform
+$transformScale091: scale(0.91)
+
+$font_0: Segoe UI Regular
+$font_1: Segoe UI Italic
+$font_2: Segoe UI Bold
+$font_3: Segoe UI Bold Italic
+$font_4: helvetica
+//urls
+$url_0: url('assets/fonts/segoe/Segoe UI.woff')
+$url_1: url('assets/fonts/segoe/Segoe UI Bold Italic.woff')
+$url_2: url('assets/fonts/segoe/Segoe UI Bold.woff')
+$url_3: url(../../image/background-image.jpg)
+
+//@extend-elements
+//original selectors
+//facebook nav .nav-center .item img, facebook nav .nav-center .item svg
+
+.extend_1 
+	width: 28px
+	height: 28px
+	fill: $color_shuttle_gray_approx
+
+
+//original selectors
+//.menu-menu #body li .circle img, .menu-menu #body li .circle svg
+.extend_2 
+	width: 18px
+	height: 18px
+	fill: $color_shuttle_gray_approx
+
+
+//original selectors
+//.facebook-content-body .facebook-left-content .body .left-content li .circle, .facebook-content-body .body .left-content li img
+.extend_3 
+	width: 38px
+	height: 38px
+	
+	border-radius: $borderradius_50per
+	display: flex
+	justify-content: center
+	align-items: center
+
+
+//original selectors
+//.home-body .body .left-content li div.circle, .home-body .body .left-content li img
+.extend_4 
+	width: 28px
+	height: 28px
+	
+	border-radius: $borderradius_50per
+	display: inline-block
+
+
+//original selectors
+//.home-body .body .center-content .home-content story .story-container .prev, .home-body .body .center-content .home-content story .story-container .next
+.extend_5 
+	position: absolute
+	width: 50px
+	height: 50px
+	background: $white
+	
+	border-radius: $borderradius_50per
+	z-index: 19
+	
+	box-shadow: 10px 10px 31px -16px $black_75
+	cursor: pointer
+	display: flex
+	justify-content: center
+	align-items: center
+	color: $color_shuttle_gray_approx
+
+
+//original selectors
+//.message-container #header .icons .icon svg, .message-container #header .icons .icon i
+.extend_6 
+	font-size: 22px
+	width: 26px
+	color: $color_heather_approx
+
+.extend_7
+	display: flex
+	justify-content: center
+	align-items: center
+	align-content: center
+.extend_8
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.extend_9
+	display: flex
+	justify-content: flex-end
+	align-items: center
+body 
+	margin: $margin_0
+	font-family: $font_0
+	background: $color_athens_gray_approx
+
+html 
+	scroll-behavior: smooth
+
+@font-face 
+	font-family: $font_0
+	font-style: normal
+	font-weight: normal
+	src: $url_0
+
+@font-face 
+	font-family: $font_1
+	font-style: normal
+	font-weight: normal
+	src: $url_1
+
+@font-face 
+	font-family: $font_2
+	font-style: normal
+	font-weight: normal
+	src: $url_2
+
+@font-face 
+	font-family: $font_3
+	font-style: normal
+	font-weight: normal
+	src: $url_1
+
+facebook 
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+	background: $color_athens_gray_approx
+
+	nav 
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 60px
+		background: $white
+		
+		box-shadow: -5px 5px 5px -7px $black_75
+		display: flex
+		z-index: 999
+		.nav-left 
+			width: 25%
+			height: 60px
+			position: relative
+			.logo 
+				width: 40px
+				height: 40px
+				
+				border-radius: $borderradius_50per
+				margin: 10px 15px
+				float: left
+
+			.search-engine-container 
+				float: left
+				min-width: 90%
+				height: 60px
+				position: absolute
+				margin-left: 60px
+				.search-engine 
+					padding: 12px 32px
+					
+					border-radius: $borderradius_25px
+					background: $color_athens_gray_approx
+					border: none
+					font-size: 15px
+					margin: 10px 5px
+					width: 78%
+					outline: none
+					cursor: text
+					&.home 
+						width: 58%
+
+
+				svg 
+					position: absolute
+					margin: 20px 12px
+
+
+
+		.nav-center 
+			width: 44%
+			height: 60px
+			display: flex
+			justify-content: flex-start
+			margin-left: 2.5%
+			.item 
+				width: 25%
+				border-radius: $borderradius_5px
+				cursor: pointer
+				background: $white
+				margin: 4px
+				margin-left: 2px
+				margin-right: 2px
+				display: flex
+				justify-content: center
+				align-items: center
+				position: relative
+				&.more 
+					display: none
+
+				&:hover 
+					background: $color_athens_gray_approx
+					.description 
+						visibility: visible
+
+				img 
+					@extend .extend_1
+
+				svg 
+					@extend .extend_1 
+
+				.description 
+					position: absolute
+					margin-top: 100px
+					font-size: 13px
+					padding: $padding_8px
+					background: $black_75
+					color: $white
+					border-radius: $borderradius_5px
+					visibility: hidden
+
+
+
+		.nav-right 
+			width: 28.5%
+			height: 60px
+			right: 0
+			position: absolute
+			.circles 
+				padding: $padding_5px
+				padding-right: 10px
+				.item 
+					width: 40px
+					height: 40px
+					background: $color_athens_gray_approx
+					
+					border-radius: $borderradius_50per
+					margin: 5px
+					margin-left: 4px
+					float: right
+					cursor: pointer
+					display: flex
+					justify-content: center
+					align-items: center
+					position: relative
+					&:active 
+						background: $color_zumthor_approx
+						
+						transform: $transformScale091
+
+					&.active 
+						background: $color_zumthor_approx
+						svg 
+							fill: $color_azure_radiance_approx
+
+						i 
+							fill: $color_azure_radiance_approx
+
+					span 
+						padding: $padding_5px
+						background: $color_amaranth_approx
+						position: absolute
+						
+						border-radius: $borderradius_50per
+						right: 0
+						top: 0
+						color: $white
+						font-size: 12px
+						border: 2px solid $white
+						display: flex
+						justify-content: center
+						align-items: center
+
+					img 
+						width: 15px
+
+					&.down svg 
+						width: 12px
+
+
+				.profile 
+					max-width: 150px
+					height: 30px
+					padding: $padding_5px
+					border-radius: $borderradius_25px
+					margin: 5px
+					float: right
+					cursor: pointer
+					//If you use compass, instead of the line below you could use + user-select($select)
+					user-select: none
+					font-weight: 600
+					font-size: 14px
+					display: flex
+					padding-right: 10px
+					align-items: center
+					&:hover 
+						background: $color_athens_gray_approx
+
+					&.active 
+						background: $color_zumthor_approx
+						color: $color_azure_radiance_approx
+
+					&:active 
+						transform: scale(0.9)
+					img 
+						width: 30px
+						height: 30px
+						
+						border-radius: $borderradius_50per
+						display: inline-block
+
+					span 
+						margin: 7px 5px
+						font-weight: 600
+						font-size: 16px
+
+	.body 
+		margin-top: 60px
+		width: 100%
+		.profile-container 
+			height: 350px
+			width: 100%
+			background: $color_black_rock_approx
+			background: linear-gradient($color_black_rock_approx 0, $white_100 74%)
+			display: flex
+			justify-content: center
+			.cover-photo-container 
+				width: 70%
+				height: 100%
+				border-bottom-right-radius: 10px
+				border-bottom-left-radius: 10px
+				background-image: $url_3
+				background-size: cover
+				background-repeat: no-repeat
+				background-position: 80% 72.5%
+				cursor: pointer
+				position: relative
+				display: flex
+				justify-content: center
+				.cover-photo-button
+					position: absolute
+					bottom: 20px
+					right: 35px
+					padding: 10px
+					border-radius: 6px
+					display: flex
+					justify-content: center
+					align-content: center
+					align-items: center
+					background: #D8DADF
+					span
+						font-weight: 600
+						color: #050505
+						user-select: none
+					img
+						width: 15px
+						margin-right: 5px
+					&:active
+						transform: $transformScale091
+				.profile 
+					width: 161px
+					height: 161px
+					background: $black
+					bottom: -20px
+					position: absolute
+					border-radius: $borderradius_50per
+					border: 4px solid $white
+					@extend .extend_7
+					padding: 4px
+					img.profile-picture 
+						max-width: 100%
+						max-height: 100%
+						border: 4px solid #1876F2
+						border-radius: $borderradius_50per
+						&:hover
+							opacity: 0.80
+					.icons
+						position: relative
+						width: 161px
+						height: 161px
+						.icon
+							position: absolute
+							bottom: 5px
+							right: 5px
+							width: 35px
+							height: 35px
+							background: #E4E6EB
+							border-radius: 50%
+							@extend .extend_7
+							img
+								width: 18px
+
+
+
+
+
+		.user-information-container 
+			padding: $padding_5px
+			display: flex
+			justify-content: center
+			background: $white
+			div 
+				margin-top: 10px
+				text-align: center
+				h1 
+					margin: 5px
+
+				span 
+					display: block
+					color: $color_shuttle_gray_approx
+					&.edit 
+						color: $color_azure_radiance_approx
+						font-weight: 600
+						margin: 5px
+						font-size: 15px
+						cursor: pointer
+						&:hover 
+							text-decoration: underline
+
+		hr 
+			width: 65%
+
+		.profile-menu 
+			width: 100%
+			height: 65px
+			display: flex
+			justify-content: center
+			background: $white
+			&.fixed 
+				position: fixed
+				top: 60px
+				background: $white
+				z-index: 999
+				border-top: 0.5px solid $color_alto_approx
+				.menu 
+					.profile-menu-button 
+						display: none
+
+					.profile-menu-picture 
+						display: block
+						.circle 
+							width: 40px
+							height: 40px
+							
+							border-radius: $borderradius_50per
+							margin: 10px
+
+						span 
+							position: absolute
+							margin: 20px 10px
+							font-size: 16px
+							font-weight: 600
+							cursor: pointer
+
+
+
+
+			.menu 
+				width: 850px
+				height: 100%
+				border-top: 1px solid $color_alto_approx
+				position: relative
+				.profile-menu-picture 
+					width: 50%
+					height: 100%
+					display: none
+
+				.profile-menu-button 
+					width: 40%
+					display: flex
+					.item 
+						cursor: pointer
+						width: 100%
+						padding: 14px
+						text-align: center
+						font-weight: 600
+						color: $color_shuttle_gray_approx
+						margin: 2.5px
+						padding-left: 12px
+						padding-right: 12px
+						
+						border-radius: $borderradius_5px
+						font-size: 15px
+						&:hover 
+							background: $color_athens_gray_approx
+
+						&.active 
+							border-bottom: 2.5px solid $color_azure_radiance_approx
+							color: $color_azure_radiance_approx
+							
+							border-bottom-left-radius: 0
+							
+							border-bottom-right-radius: 0
+
+
+
+				.buttons 
+					padding: $padding_5px
+					position: absolute
+					right: 0
+					top: 0
+
+					.button 
+						padding: $padding_5px
+						min-width: 40px
+						height: 30px		
+						border-radius: 6px
+						background: $color_athens_gray_approx
+						margin: 5px
+						float: right
+						cursor: pointer
+						display: flex
+						justify-content: center
+						align-items: center
+						//If you use compass, instead of the line below you could use + user-select($select)
+						user-select: none
+						&:active 
+							
+							transform: scale(0.9)
+
+						img 
+							width: 15px
+
+						span 
+							margin-left: 5px
+							margin: 5px
+							font-weight: 500
+						p
+							font-weight: 600
+							margin: 5px
+
+
+	.profile-body-content
+		width: 100%
+		display: flex
+		display: none
+		justify-content: center
+		background: $color_athens_gray_approx
+		.content 
+			margin-bottom: 10px
+			display: grid
+			grid-template-columns: 1fr 1.5fr
+			grid-template-areas: "Left Right"
+			//If you use compass, instead of the line below you could use + column-gap($width)
+			column-gap: 1px
+			.left-content 
+				position:  relative
+				grid-area: Left
+				min-width: 360px
+				max-width: 360px
+				&.stick
+					position: fixed
+					bottom: 0
+				.container 
+					
+					border-radius: $borderradius_10px
+					width: 100%
+					background: $white
+					
+					box-shadow: -1px -2px 27px -23px $black_75
+					margin: 10px
+					#header 
+						padding: $padding_10px
+						padding-bottom: 0
+						div 
+							font-size: 20px
+							font-weight: 600
+							margin: 10px
+
+
+					#body 
+						padding: $padding_10px
+						padding-top: 0
+						div 
+							padding: $padding_5px
+							margin: 5px
+							img 
+								margin-right: 5px
+								opacity: 0.85
+
+							span 
+								margin: 2.5px
+								font-size: 15px
+								color: $color_black_approx
+								&.bold 
+									font-weight: 600
+
+								&.underline 
+									cursor: pointer
+									&:hover 
+										text-decoration: underline
+
+
+						&.grid-body
+							padding: 5px
+
+						.grid-photos 
+							display: grid
+							grid-template-columns: 1fr 1fr 1fr
+							grid-template-rows: 1fr 1fr  1fr
+							min-height: 350px
+							column-gap: 5px
+							grid-row-gap: 5px
+							.item 
+								background-size: cover
+								background-position: center
+
+								margin: 0
+								&:nth-child(1)
+									border-top-left-radius: 10px
+								&:nth-child(3)
+									border-top-right-radius: 10px
+								&:nth-child(7)
+									border-bottom-left-radius: 10px
+								&:nth-child(9)
+									border-bottom-right-radius: 10px
+									
+
+
+						.ft_img img 
+							max-width: 100%
+							
+							border-radius: $borderradius_10px
+
+						.graph-body .skill-con .graph 
+							width: 90%
+							height: 20px
+							background: $color_mystic_approx
+							
+							border-radius: $borderradius_25px
+							position: relative
+							cursor: pointer
+							.value 
+								height: 20px
+								background: $color_curious_blue_approx
+								//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+								border-top-left-radius: 25px
+								
+								border-bottom-left-radius: 25px
+								position: absolute
+								text-align: center
+								cursor: pointer
+								margin: -5px
+								label 
+									font-size: 11px
+									color: $white
+									//If you use compass, instead of the line below you could use + user-select($select)
+									user-select: none
+									cursor: pointer
+
+
+
+
+
+
+			.right-content 
+
+				grid-area: Right
+				padding: $padding_10px 20px
+				padding-top: 0
+				margin-top: -5px
+				.post-main-container 
+					margin-left: 0
+					width: 470px
+
+		.one-half-pipe-container
+			background: $white
+			border-radius: 5px
+			width: 62.5%
+			min-height: 300px	
+			margin-top: 20px
+			margin-bottom: 20px
+			box-shadow: -1px -2px 27px -23px $black_75
+			display: flex
+			position: relative
+			padding: 5px
+			.row
+				&.row1
+					width: 35%
+					border-right: 1px solid lightgray
+				&.row2
+					width: 65%
+				.header
+					padding: 10px 20px
+					padding-bottom: 5px
+					position: absolute
+					width: 20.5%
+					span
+						a
+							color: $color_black_approx
+							font-size: 20px
+							font-weight: 700
+							text-decoration: none
+							position: absolute
+							width: 200px
+				.list-body
+					padding: 10px
+					margin-top: 35px
+					li
+						padding: 8px
+						border-radius: 6px
+						list-style-type: none
+						cursor: pointer
+						margin-top: 5px
+						span 
+							font-weight: 700
+							color: $color_shuttle_gray_approx
+						&:hover
+							background: $color_athens_gray_approx
+						&.active
+							background: $color_zumthor_approx
+							span
+								color: #1876F2
+
+			.header
+					padding-top: 10px
+					padding-left: 10px
+					padding-bottom: 5px
+					position: absolute
+					width: 98.5%
+
+					p
+						&.len-friends
+							float: left
+						a
+							color: $color_black_approx
+							font-size: 20px
+							font-weight: 700
+							text-decoration: none	
+					.more-set
+						display: flex
+						align-content: center
+						align-items: center
+						justify-content: flex-end
+						padding-right: 20px
+						.friends-search-engine
+							margin: 0px 10px
+							input
+								width: 170px
+								border-radius: 25px
+								background: #F0F2F5
+								padding: 8px 14px
+								border: none
+								outline: none
+								font-size: 16px
+						.button
+							padding: 8px
+							margin: 0px 5px
+							font-size: 16px
+							cursor: pointer
+							border-radius: 6px
+							@extend .extend_7
+							&.active
+								color: $color_azure_radiance_approx
+								font-weight: 700
+							&:hover
+								background: #F2F2F2
+							svg
+								width: 15px
+							&:last-child
+								padding: 10px 15px
+
+			.header-menu-list
+				margin-top: 55px
+				display: flex
+				height: 50px
+				padding: 10px
+				position: absolute
+				.item
+					text-align: center
+					display: flex
+					justify-content: center
+					align-items: center
+					padding: $padding_10px $padding_15px 
+					cursor: pointer
+					border-radius: 5px
+					&:hover 
+						background: $color_athens_gray_approx
+
+					span 
+						font-size: 15px
+						color: $color_shuttle_gray_approx
+						font-weight: 600
+
+					&.active 
+						border-bottom: 3px solid $color_azure_radiance_approx
+						border-bottom-left-radius: 0px
+						border-bottom-right-radius: 0px
+						span 
+							color: $color_azure_radiance_approx
+			.big-friend-list-container
+				width: 98.2%
+				margin: 10px
+				margin-top: 120px
+				padding: 5px
+				.item
+					border-radius: 6px
+					padding: 10px
+					width: 46.5%
+					margin: 2.5px
+					float: left
+					border: 1px solid #F0F2F5
+					display: flex
+					align-content: center
+					align-items: center
+					position: relative
+					.profile-picture
+						width: 80px
+						height: 80px
+						margin-right: 10px
+						.box
+							width: 80px
+							height: 80px
+							border-radius: 6px
+							border: 1px solid #F0F2F5
+					.info
+						.link
+							display: block
+							a
+								color: $color_black_approx
+								font-size: 17px
+								font-weight: 600
+								text-decoration: none
+								width: 250px
+						.mutual-friends
+							display: block 
+							margin-top: -5px
+							span
+								color: $color_shuttle_gray_approx
+								font-size: 13px
+					.status-button
+						position: absolute
+						right: 10px
+						padding: $padding_5px $padding_10px
+						min-width: 40px
+						height: 30px
+						border-radius: 5px
+						background: $color_athens_gray_approx
+						margin: 5px
+						float: right
+						cursor: pointer
+						display: flex
+						justify-content: center
+						align-items: center
+						user-select: none
+						&:active 
+							transform: scale(0.9)
+						span 
+							font-weight: 700
+							color: $color_black_approx
+
+			.big-photo-list-container
+				width: 98.2%
+				margin: 5px
+				margin-top: 120px
+
+				.item
+					border-radius: 8px
+					margin: 5px
+					min-width: 150px
+					min-height: 150px
+					border: 1px solid #F0F2F5
+					float: left
+					display: flex
+					align-content: center
+					align-items: center
+					position: relative
+					cursor: pointer
+					.picture
+						border-radius: 6px
+						width: 100%
+						height: 100%
+						position: absolute
+						top: 0
+						background-size: cover
+						background-position: center
+					.edit
+						position: absolute
+						width: 35px
+						height: 35px
+						border-radius: 50%
+						right: 10px
+						top: 10px
+						@extend .extend_7
+						z-index: 99
+						&:before
+							content: ""
+							position: absolute
+							width: 35px
+							height: 35px
+							border-radius: 50%
+							right: 0px
+							top: 0px
+							background: rgba(0,0,0,0.25)
+							z-index: -1
+						svg
+							fill: #FFF
+							z-index: 999
+			.big-story-list-container
+				width: 98.2%
+				margin: 5px
+				margin-top: 120px
+				display: grid
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+				column-gap: 2.5px
+				grid-row-gap: 2.5px
+				.item
+					border-radius: 6px
+					padding: 10px
+					margin: 2.5px
+					float: left
+					min-height: 225px
+					border: 1px solid #F0F2F5
+					display: flex
+					align-content: center
+					align-items: center
+					position: relative
+					cursor: pointer
+					.picture
+						border-radius: 6px
+						width: 100%
+						height: 100%
+					.date
+						position: absolute
+						height: 35px
+						left: 10px
+						top: 0px
+						@extend .extend_7
+						span
+							font-size: 14px
+							font-weight: 700
+							.status
+								width: 10px
+								height: 10px
+								border-radius: 50%
+								background: #1876F2
+								display: inline-block
+
+
+	.other-content 
+		width: 100%
+		display: flex
+		justify-content: center
+		.other 
+			width: 65%
+
+
+.user-post-container 
+	border-radius: $borderradius_10px
+	background: $white
+	box-shadow: -1px -2px 27px -23px $black_75
+	margin: 10px
+	width: 490px
+	border: 1px solid #EEF0F3
+	#header 
+		padding: 15px
+		.box 
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			#circle 
+				width: 40px
+				height: 40px
+				
+				border-radius: $borderradius_50per
+
+			#info 
+				margin-left: 10px
+				a 
+					text-decoration: none
+					color: $color_black_approx
+					font-weight: 600
+					font-size: 15px
+					&:hover 
+						text-decoration: underline
+
+
+				span 
+					font-size: 13px
+					color: $gray
+					display: block
+
+
+
+
+	#text-content 
+		padding: 0 10px
+		padding-bottom: 5px
+
+	.post-theme 
+		height: 300px
+		padding: $padding_10px
+		text-align: center
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 30px
+		color: $white
+		font-weight: 700
+		#text-content 
+			width: 400px
+
+
+	#image-content 
+		display: grid
+		//If you use compass, instead of the line below you could use + column-gap($width)
+		column-gap: 2.5px
+		grid-row-gap: 2.5px
+		img 
+			max-width: 100%
+			cursor: pointer
+			object-fit: cover
+			width: 100%
+			&:nth-child(1) 
+				grid-area: one
+
+			&:nth-child(2) 
+				grid-area: two
+
+			&:nth-child(3) 
+				grid-area: three
+
+			&:nth-child(4) 
+				grid-area: four
+
+
+		&.style1 
+			grid-template-columns: 1fr
+			grid-template-areas: "one"
+			img:nth-child(1) 
+				max-height: auto
+
+
+		&.style2 
+			grid-template-columns: 1fr 1fr
+			grid-template-areas: "one two" "one two"
+			img 
+				&:nth-child(1) 
+					min-height: 500px
+
+				&:nth-child(2) 
+					min-height: 500px
+
+
+
+		&.style3 
+			grid-template-columns: 1fr 1fr
+			grid-template-areas: "one one" "two three"
+			img 
+				&:nth-child(1) 
+					max-height: 250px
+
+				&:nth-child(2) 
+					max-height: 250px
+
+
+
+		&.style4 
+			grid-template-columns: 1fr 1fr 1fr
+			grid-template-rows: 1fr
+			grid-template-areas: "two two two" "one three four"
+			object-fit: cover
+			img 
+				&:nth-child(1) 
+					width: 100%
+
+				&:nth-child(2) 
+					width: 100%
+					max-height: 250px
+
+				&:nth-child(3) 
+					width: 100%
+					height: 100%
+
+				&:nth-child(4) 
+					width: 100%
+					height: 100%
+
+
+
+
+	#reactions 
+		padding: $padding_5px
+		height: 20px
+		&.none 
+			padding: 0
+			height: 0
+
+		span 
+			color: $color_shuttle_gray_approx
+			margin-top: 5px
+			font-size: 15px
+			cursor: pointer
+			&:hover 
+				text-decoration: underline
+
+			&.left 
+				float: left
+				margin-left: 10px
+
+			&.right 
+				float: right
+				margin-right: 4px
+
+
+		img 
+			width: 18px
+			margin: 7px 1px
+			float: left
+			cursor: pointer
+
+			&:nth-child(2) 
+				cursor: pointer
+
+			&:nth-child(3) 
+				cursor: pointer
+
+
+
+	#footer 
+		padding: $padding_10px
+		position: relative
+		padding-bottom: 5px
+		h5 
+			color: $color_shuttle_gray_approx
+			font-size: 15px
+			cursor: pointer
+			margin: 5px
+
+		.react-buttons 
+			display: flex
+			justify-content: center
+			padding: $padding_2px
+			border-bottom: 0.5px solid $color_alto_approx
+			border-top: 0.5px solid $color_alto_approx
+			.item 
+				width: 45%
+				padding: $padding_10px
+				padding-top: 5px
+				padding-bottom: 5px
+				text-align: center
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				margin: 2.5px
+				
+				border-radius: $borderradius_5px
+				color: $color_shuttle_gray_approx
+				font-weight: 600
+				font-size: 15px
+				text-transform: capitalize
+				&:hover 
+					background: $color_athens_gray_approx
+
+				&:active 
+					
+					transform: scale(0.9)
+
+				img 
+					width: 18px
+					margin: 5px
+					margin-right: 8px
+
+
+
+		.comment-container 
+			padding: $padding_5px
+			padding-left: 0
+			display: flex
+			img 
+				width: 32.5px
+				height: 32.5px
+				margin: 10px 5px
+				
+				border-radius: $borderradius_50per
+				display: inline-block
+
+			.comment-textarea 
+				width: 85%
+				display: inline-block
+				height: 22.5px
+				margin-top: 7px
+				margin-left: 0
+				background: $color_athens_gray_approx
+				border-radius: $borderradius_25px
+				padding: 7px 12px
+				outline: none
+
+			ul
+				display: flex
+				position: absolute
+				right: 30px
+				min-width: 150px
+				justify-content: center
+				align-content: center
+				align-items: center
+				height: 50px
+				li
+					list-style-type: none
+					margin: 2.5px 6px
+					display: flex
+					justify-content: center
+					align-content: center
+					cursor: pointer
+					svg
+						width: 16.5px
+						fill: #65676B
+					.desc
+						margin-top: -40px
+						font-size: 12px
+
+		.user-comments-section 
+			.user-post-comments 
+				padding: $padding_5px
+				padding-bottom: 0
+				display: flex
+				align-items: center
+				margin-top: 5px
+				.circle 
+					width: 35px
+					height: 35px
+					
+					border-radius: $borderradius_50per
+					background: $black
+
+				.text 
+					margin-left: 10px
+					padding: $padding_10px
+					background: $color_athens_gray_approx
+					
+					border-radius: 20px
+					a 
+						text-decoration: none
+						font-size: 13px
+						color: $color_black_approx
+						display: block
+						font-weight: 600
+						&:hover 
+							text-decoration: underline
+
+
+					span 
+						font-size: 15px
+
+
+
+			.comment-reactions 
+				display: block
+				margin-top: -5px
+				margin-left: 12%
+				span 
+					color: $color_shuttle_gray_approx
+					font-size: 12px
+					cursor: pointer
+					font-weight: 600
+					margin-right: 5px
+					&:hover 
+						text-decoration: underline
+
+
+
+			.user-post-comment-replies 
+				padding: $padding_5px
+				display: flex
+				.circle 
+					width: 30px
+					height: 30px
+					
+					border-radius: $borderradius_50per
+					background: $black
+
+				.text 
+					margin-left: 10px
+					padding: $padding_10px
+					background: $color_athens_gray_approx
+					
+					border-radius: 20px
+					a 
+						text-decoration: none
+						font-size: 13px
+						color: $color_black_approx
+						display: block
+						font-weight: 600
+
+					span 
+						font-size: 15px
+
+
+
+			.reply-reactions 
+				display: block
+				margin-left: 12%
+				span 
+					color: $color_shuttle_gray_approx
+					font-size: 12px
+					cursor: pointer
+					font-weight: 600
+					margin-right: 5px
+
+
+			.user-post-comment-textarea-container 
+				padding: $padding_5px
+				display: flex
+				justify-content: flex-start
+				.circle 
+					width: 30px
+					height: 30px
+					
+					border-radius: $borderradius_50per
+
+				.comment-reply-textarea 
+					background: $color_athens_gray_approx
+					
+					border-radius: $borderradius_25px
+					padding: $padding_8px 12px
+					min-width: 320px
+					margin-left: 5px
+					outline: none
+					font-size: 15px
+					line-height: 17px
+
+
+
+		.item .reaction-container .item 
+			margin: $margin_0
+			padding: 0
+
+
+	#video-content 
+		position: relative
+		cursor: pointer
+		.controls 
+			position: absolute
+			width: 100%
+			height: 50px
+			margin-top: -50px
+			display: flex
+			align-items: center
+			visibility: hidden
+			.play-control 
+				display: flex
+				margin-left: 5px
+				color: $white
+				font-size: 13px
+				align-items: center
+				span 
+					margin: 1.5px
+
+				svg 
+					fill: $white
+					cursor: pointer
+					margin: 5px
+					margin-top: 10px
+
+				.pause 
+					display: none
+
+
+			.time-control 
+				margin-left: 10px
+				display: flex
+				align-content: center
+				position: absolute
+				width: 65%
+				height: 4px
+				margin-left: 17%
+				background: $color_scorpion_approx
+				
+				border-radius: $borderradius_5px
+				cursor: pointer
+				.current-range 
+					width: 80%
+					height: 100%
+					background: $color_dodger_blue_approx
+					//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+					border-top-left-radius: 5px
+					
+					border-bottom-left-radius: 5px
+					position: absolute
+					z-index: 2
+
+				.loading-range 
+					width: 90%
+					height: 100%
+					background: $color_tana_approx
+					//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+					border-top-left-radius: 5px
+					
+					border-bottom-left-radius: 5px
+					position: absolute
+					z-index: 1
+
+
+			.video-control 
+				position: absolute
+				right: 0
+				padding: $padding_5px
+				width: 18%
+				display: flex
+				svg 
+					fill: $white
+					cursor: pointer
+
+				.svg 
+					margin-left: 20px
+					&.volume 
+						.adjust-volume 
+							position: absolute
+							
+							transform: rotate(-90deg)
+							margin-top: -85px
+							margin-left: -25px
+							visibility: hidden
+							input 
+								width: 80px
+								cursor: pointer
+
+							input::-webkit-slider-thumb 
+								background: $white
+
+
+						&:hover .adjust-volume 
+							visibility: visible
+
+
+
+
+
+		&:hover .controls 
+			visibility: visible
+
+
+
+.newEmptyChatBox 
+	#header 
+		
+		box-shadow: none !important
+		padding-bottom: 0
+		height: auto !important
+		h2 
+			font-size: 16px
+			margin: 15px
+			margin-bottom: 0
+			display: inline-block
+
+		.search-engine-container 
+			padding: $padding_10px
+			z-index: 10
+			margin-left: 5px
+			input 
+				padding: $padding_8px 12px
+				cursor: text
+				outline: none
+				border: none
+				width: 80%
+				font-size: 16px
+
+
+		.icons .icon 
+			width: 35px
+			height: 35px
+			fill: $color_azure_radiance_approx
+
+
+	#body 
+		margin-top: 28% !important
+		
+		transform: none !important
+		direction: ltr !important
+		overflow-y: hidden !important
+		.contact-tab 
+			display: flex
+			.item 
+				width: 100%
+				text-align: center
+				display: flex
+				justify-content: center
+				align-items: center
+				padding: $padding_10px
+				cursor: pointer
+				&:hover 
+					background: $color_athens_gray_approx
+
+				span 
+					font-size: 15px
+					color: $color_shuttle_gray_approx
+					font-weight: 600
+
+				&.active 
+					border-bottom: 3px solid $color_azure_radiance_approx
+					span 
+						color: $color_azure_radiance_approx
+
+
+
+
+		.contact-list 
+			padding: $padding_5px
+			height: 86%
+			overflow-y: auto
+			div 
+				padding: $padding_8px
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				cursor: pointer
+				padding-right: 0
+				margin-right: 0
+				
+				border-radius: $borderradius_4px
+				&:hover 
+					background: $color_athens_gray_approx
+
+				.image 
+					width: 35px
+					height: 35px
+					
+					border-radius: $borderradius_50per
+					background: $black
+
+				.info 
+					margin-left: 10px
+					font-size: 16px
+					font-weight: 600
+
+
+
+
+
+.reaction-container 
+	position: absolute
+	display: flex
+	margin-top: -10%
+	margin-left: -2%
+	background: $white
+	
+	border-radius: 50px
+	padding: $padding_8px
+	padding-top: 5px
+	padding-bottom: 5px
+	
+	box-shadow: 2px 3px 23px -9px $black_75
+	visibility: hidden
+	text-transform: capitalize
+	.item 
+		img 
+			width: 38px
+			margin-right: 5px
+			cursor: pointer
+			&:hover 
+				
+				transform: scale(1.3)
+				margin-top: -5%
+
+
+		span 
+			position: absolute
+			margin-top: -12%
+			margin-left: -13%
+			font-size: 12px
+			color: $white
+			background: $black
+			background: $black_90
+			
+			border-radius: $borderradius_25px
+			padding: $padding_5px
+			padding-left: 8px
+			padding-right: 8px
+			font-weight: 600
+			visibility: hidden
+			text-transform: capitalize
+
+		&:hover span 
+			visibility: visible
+
+		&:last-child img 
+			margin-right: 0
+
+
+
+.fill 
+	color: $color_dodger_blue_approx
+	font-weight: 600
+
+.user-comment-reply-container 
+	margin-left: 12%
+
+.menu-menu 
+	position: fixed
+	top: 55px
+	right: 20px
+	width: 345px
+	max-height: 540px
+	min-height: 450px
+	padding: $padding_10px
+	padding-top: 0
+	padding-bottom: 5px
+	
+	border-radius: 8px
+	background: $white
+	
+	box-shadow: 2px 3px 70px -33px $black_75
+	display: none
+	overflow-y: auto
+	overflow-x: hidden
+	#header 
+		padding: $padding_10px 5px
+		h1 
+			//If you use compass, instead of the line below you could use + user-select($select)
+			user-select: none
+			font-size: 24px
+			display: inline-block
+			font-weight: 800
+			margin-top: 5px
+
+		.icons 
+			float: right
+			padding: $padding_5px
+			padding-top: 0
+			padding-right: 10px
+			min-width: 40%
+			margin-right: -20px
+			display: flex
+			justify-content: flex-end
+			.icon 
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 30px
+				height: 30px
+				cursor: pointer
+				
+				border-radius: $borderradius_50per
+				font-size: 15px
+				margin: 5px
+				color: $color_shuttle_gray_approx
+				&:hover 
+					background: $color_athens_gray_approx
+
+
+
+
+	#body 
+		hr 
+			margin: 10px
+
+		li 
+			padding: 6px
+			display: flex
+			align-items: center
+			//If you use compass, instead of the line below you could use + user-select($select)
+			user-select: none
+			margin: 2px
+			
+			border-radius: $borderradius_5px
+			cursor: pointer
+			&:hover 
+				background: $concrete
+
+			&:active 
+				background: $mercury
+
+			.circle 
+				width: 35px
+				height: 35px
+				background: $color_mischka_approx
+				
+				border-radius: $borderradius_50per
+				margin-right: 10px
+				display: flex
+				justify-content: center
+				align-items: center
+				align-content: center
+				img 
+					@extend .extend_2
+
+				svg 
+					@extend .extend_2
+
+
+			.info 
+				span 
+					display: block
+					font-weight: 600
+
+				small 
+					color: $color_oslo_gray_approx
+					font-size: 12px
+
+
+
+		a 
+			font-weight: 600
+			text-decoration: none
+			color: $color_black_approx
+
+
+	.message-body 
+		min-height: 310px
+		li 
+			padding: 6px 4px
+			align-items: center
+			//If you use compass, instead of the line below you could use + user-select($select)
+			user-select: none
+			margin: 2px
+			
+			border-radius: $borderradius_10px
+			cursor: pointer
+			display: flex
+			position: relative
+			&:hover 
+				background: $concrete
+
+			.status 
+				position: absolute
+				width: 12px
+				height: 12px
+				
+				border-radius: $borderradius_50per
+				background: $color_azure_radiance_approx
+				right: 2.5%
+
+			.circle 
+				width: 55px
+				height: 55px
+				background: $color_mischka_approx
+				
+				border-radius: $borderradius_50per
+
+			.info 
+				padding: $padding_5px 10px
+				overflow: hidden
+				width: 65%
+				text-overflow: ellipsis
+				span 
+					display: block
+					font-weight: 600
+
+				small 
+					white-space: nowrap
+
+
+
+
+	#footer 
+		display: flex
+		justify-content: center
+		align-items: center
+		align-content: center
+		padding: $padding_10px
+		border-top: 1px solid $color_alto_approx
+		position: absolute
+		a 
+			font-size: 16px
+			text-decoration: none
+			color: $color_azure_radiance_approx
+			font-weight: 600
+			&:hover 
+				text-decoration: underline
+
+
+
+	.account-body 
+		padding-top: 10px
+		position: relative
+		li 
+			&.profile 
+				.circle 
+					width: 60px !important
+					height: 60px !important
+
+				.info small 
+					font-size: 16px !important
+
+
+			.menu 
+				position: absolute
+				right: 2%
+				width: 35px
+				height: 35px
+				
+				border-radius: $borderradius_50per
+				display: flex
+				justify-content: center
+				align-items: center
+				font-size: 24px
+				color: $color_shuttle_gray_approx
+				svg 
+					fill: $color_shuttle_gray_approx
+					width: 20px
+
+
+			.circle 
+				display: flex
+				justify-content: center
+				align-items: center
+				align-content: center
+				img 
+					width: 20px
+					height: 20px
+
+
+
+
+
+.message-search-engine-container 
+	padding: $padding_5px
+	svg 
+		position: absolute
+		margin: 7px
+
+	.message-search-engine 
+		padding: $padding_8px 34px
+		
+		border-radius: $borderradius_25px
+		background: $color_athens_gray_approx
+		outline: none
+
+
+.switch 
+	position: absolute
+	right: 2%
+	width: 50px
+	height: 25px
+	
+	border-radius: $borderradius_25px
+	display: flex
+	align-items: center
+	background: $color_ghost_approx
+	padding: $padding_2px
+	cursor: pointer
+	&.relative 
+		position: relative !important
+
+	&.small 
+		width: 25px !important
+		height: 12.5px !important
+		.onOff 
+			width: 12.5px
+			height: 12.5px
+
+
+	.onOff 
+		width: 25px
+		height: 25px
+		background: $white
+		
+		border-radius: $borderradius_50per
+		//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.2s
+
+	&.active 
+		background: $color_azure_radiance_approx
+
+
+.scrollbar::-webkit-scrollbar-track 
+	background: transparent
+	
+	border-radius: $borderradius_10px
+
+.scrollbar::-webkit-scrollbar-thumb 
+	background: transparent
+	
+	border-radius: $borderradius_10px
+	&:hover 
+		background: $color_ghost_approx
+
+
+.scrollbar::-webkit-scrollbar 
+	width: 8px
+	//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 1s
+	width: 10px
+
+.greyscale 
+	filter: grayscale(1)
+
+.sepia 
+	filter: sepia(100%)
+
+.blur 
+	filter: blur(5px)
+
+.saturate 
+	filter: saturate(2)
+
+.hue 
+	filter: hue-rotate(140deg)
+
+.invert 
+	filter: invert(.8)
+
+.darken 
+	filter: brightness(.5)
+
+.contrast 
+	filter: contrast(2)
+
+.combine 
+	filter: contrast(1.4) saturate(1.8) sepia(.6)
+
+.facebook-content-body 
+	.facebook-left-content 
+		background: $white
+		width: 360px
+		height: 100%
+		position: fixed
+		left: 0
+		overflow: hidden
+		padding-right: 0
+		.header 
+			padding: $padding_10px 15px
+
+		.body 
+			position: relative
+			width: 100%
+			height: 500px
+			margin-top: 0
+			padding-bottom: 100px
+			.left-content 
+				overflow-y: auto
+				width: 100%
+				height: 80% !important
+				position: absolute
+				li 
+					list-style-type: none
+					padding: $padding_8px
+					margin: $margin_0 10px
+					
+					border-radius: 8px
+					display: flex
+					align-items: center
+					&:hover 
+						background: #f0f2f5
+					&.margin 
+						margin-left: 20px
+						margin-top: 8px
+
+					&.active 
+						background: $color_zumthor_approx
+						.circle 
+							background: $color_azure_radiance_approx
+							svg 
+								fill: $white
+								width: 26px
+								height: 26px
+
+					
+
+					.circle 
+						@extend .extend_3
+						width: 38px
+						height: 38px
+						
+						border-radius: $borderradius_50per
+						display: flex
+						justify-content: center
+						align-items: center
+						background: $color_athens_gray_approx
+
+					div.info 
+						display: inline-block
+						margin: 6px 8px
+						font-weight: 600
+						font-size: 16px
+						//If you use compass, instead of the line below you could use + user-select($select)
+						user-select: none
+						color: $color_black_approx
+
+
+				.buttons 
+					padding: $padding_8px
+					display: flex
+					align-items: center
+					justify-content: center
+					cursor: pointer
+					margin: 8px
+					font-weight: 600
+					
+					border-radius: 8px
+					background: $color_athens_gray_approx
+					&:hover 
+						background: $color_athens_gray_approx !important
+
+					&.active 
+						color: $color_azure_radiance_approx
+						background: $color_zumthor_approx
+						&.not 
+							padding: 4px 8px
+							background: transparent
+							justify-content: flex-start
+
+
+
+
+
+		h3 
+			margin: 10px 15px
+			font-size: 18px
+
+
+	.facebook-right-content 
+		position: absolute
+		right: 0
+		width: 73.7%
+		.big-box 
+			padding: 18px
+			margin-left: 3%
+			margin-right: 3%
+			background: $color_azure_radiance_approx
+			
+			border-bottom-right-radius: 10px
+			
+			border-bottom-left-radius: 10px
+			h3 
+				color: $white
+				margin: 2px
+
+			p 
+				color: $white
+				margin-left: 2px
+
+			.buttons 
+				background: $white
+				display: inline-block
+				padding: $padding_8px
+				
+				border-radius: $borderradius_5px
+				margin-top: 15px
+				font-weight: 600
+				padding-left: 10px
+				padding-right: 10px
+
+
+		.big-content 
+			padding: $padding_20px
+			margin-top: 10px
+			#header 
+				padding: $padding_5px
+				h3 
+					display: inline-block
+					font-size: 22px
+
+				p 
+					float: right
+					margin-right: 10px
+					margin-top: -20px
+					color: $color_azure_radiance_approx
+					cursor: pointer
+					&:hover 
+						text-decoration: underline
+
+
+
+			#body 
+				padding: $padding_5px
+				display: grid
+				grid-template-columns: 1fr 1fr 1fr 1fr
+				//If you use compass, instead of the line below you could use + column-gap($width)
+				column-gap: 10px
+				grid-row-gap: 10px
+				.item 
+					cursor: pointer
+					small 
+						color: $color_shuttle_gray_approx
+						text-overflow: ellipsis
+						white-space: nowrap
+						overflow: hidden
+						max-width: 150px
+
+					.preview 
+						height: 250px
+						background: $color_shuttle_gray_approx
+						
+						border-radius: $borderradius_10px
+						margin-bottom: 10px
+						position: relative
+						.icons 
+							position: absolute
+							top: 5px
+							right: 5px
+							width: 150px
+							height: 50px
+							display: flex
+							justify-content: center
+							align-content: center
+							align-items: center
+							visibility: hidden
+							.icon 
+								width: 40px
+								height: 40px
+								
+								border-radius: $borderradius_50per
+								margin-left: 5px
+								background: $white
+								display: flex
+								justify-content: center
+								align-items: center
+								align-content: center
+								svg 
+									width: 22px
+									height: 22px
+									fill: $color_shuttle_gray_approx !important
+
+								path 
+									fill: $color_shuttle_gray_approx !important
+
+
+
+
+					&:hover .preview .icons 
+						visibility: visible
+
+
+
+
+		.main-content 
+			padding: $padding_10px
+			padding-left: 8%
+			padding-right: 8%
+			.user-post-container 
+				width: auto !important
+
+
+
+	.body .left-content li 
+		img 
+			@extend .extend_3
+
+		i 
+			padding: $padding_10px
+			margin-left: 20px
+
+
+
+.settings-container 
+	position: absolute
+	padding: $padding_10px
+	background: $white
+	margin: -50px -350px
+	width: 320px
+	
+	border-radius: $borderradius_10px
+	display: none
+	
+	box-shadow: -2px 4px 24px -12px $black_100
+	li 
+		list-style-type: none
+		padding: $padding_5px
+		margin: 2.5px
+		
+		border-radius: $borderradius_5px
+		cursor: pointer
+		display: flex
+		align-items: center
+		&:hover 
+			background: $concrete
+
+		&:active 
+			background: $color_athens_gray_approx
+
+		.circle 
+			width: 25px
+			height: 25px
+			background: $color_athens_gray_approx
+			
+			border-radius: $borderradius_50per
+			margin-right: 10px
+
+		span 
+			font-weight: 590
+			//If you use compass, instead of the line below you could use + user-select($select)
+			user-select: none
+
+
+	hr 
+		margin: 7.5px
+
+
+.newPostTextArea-container 
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	z-index: 999
+	display: none
+	align-items: center
+	align-content: center
+	.background 
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+		background: $white
+		opacity: 0.6
+
+	.newPostTextArea 
+		width: 500px
+		background: $white
+		position: absolute
+		z-index: 2
+		
+		border-radius: $borderradius_5px
+		
+		box-shadow: -1px 7px 18px -5px $black_75
+		#header 
+			padding: $padding_5px
+			border-bottom: 0.5px solid $color_alto_approx
+			position: relative
+			h2 
+				margin: 12px
+				font-size: 20px
+
+			.close 
+				position: absolute
+				margin: 10px
+				width: 35px
+				height: 35px
+				top: 2.5px
+				right: 2.5px
+				background: $color_black_haze_approx
+				
+				border-radius: $borderradius_50per
+				cursor: pointer
+				svg 
+					width: 15px
+					height: 15px
+					margin: 10px
+					fill: $color_shuttle_gray_approx
+
+
+
+		#body 
+			padding: $padding_10px 0
+			padding-bottom: 10px
+			max-height: 500px
+			overflow-y: auto
+			.info-container 
+				padding: $padding_10px
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				.circle 
+					width: 40px
+					height: 40px
+					background: $black
+					
+					border-radius: $borderradius_50per
+
+				.name 
+					margin: 10px
+					//If you use compass, instead of the line below you could use + user-select($select)
+					user-select: none
+					cursor: pointer
+					span 
+						font-weight: 600
+
+
+
+			.main-text-area 
+				padding: $padding_10px
+				height: 100px
+				outline: none
+				font-size: 24px
+				overflow-y: auto
+				font-weight: 500
+				text-align: left
+				color: $color_black_approx
+
+			.main-container 
+				height: auto
+				background: $white
+				display: block
+				&.theme 
+					height: 300px
+					background: $black
+					display: flex
+					justify-content: center
+					align-items: center
+					text-align: center
+					//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: 0.2s
+					.main-text-area 
+						color: $white
+						width: 400px
+						text-align: center
+						height: 125px
+						font-size: 30px
+						font-weight: 700
+						[placeholder] 
+							text-align: center
+							color: $white
+
+
+
+
+			.some-container 
+				padding: 0
+				margin-top: -10px
+				.theme-container 
+					max-width: 90%
+					padding: $padding_5px
+					display: inline-block
+					.item 
+						width: 35px
+						height: 35px
+						
+						border-radius: $borderradius_5px
+						float: left
+						cursor: pointer
+						margin: 5px
+						&.main-theme-button 
+							background: none
+
+						svg 
+							width: 25px
+							height: 25px
+							margin: 5px
+
+						&:active 
+							
+							transform: scale(0.9)
+
+
+
+
+			.emoji 
+				width: 35px
+				height: 35px
+				float: right
+				
+				border-radius: $borderradius_5px
+				cursor: pointer
+				margin-right: 5px
+				margin-top: 10px
+				svg 
+					width: 25px
+					height: 25px
+					margin: 5px
+
+				&:active 
+					
+					transform: scale(0.9)
+
+
+			.box 
+				padding: $padding_5px 10px
+				
+				border-radius: $borderradius_5px
+				margin: 5px
+				border: 1px solid $color_alto_approx
+				p 
+					display: inline-block
+					font-weight: 500
+					font-size: 16px
+					margin: 10px
+					//If you use compass, instead of the line below you could use + user-select($select)
+					user-select: none
+
+				.circles 
+					float: right
+					.item 
+						width: 30px
+						height: 30px
+						
+						border-radius: $borderradius_50per
+						margin: 5px
+						cursor: pointer
+						float: left
+						display: flex
+						justify-content: center
+						align-items: center
+						svg 
+							width: 20px
+							height: 20px
+							margin: 5px
+
+						&:hover 
+							background: $color_black_haze_approx
+
+						&:active 
+							
+							transform: scale(0.9)
+
+
+
+
+			.submit-post 
+				padding: $padding_10px
+				
+				border-radius: $borderradius_5px
+				color: $white
+				margin: 10px
+				background: $color_azure_radiance_approx
+				text-align: center
+				font-weight: 600
+				cursor: pointer
+				width: 90%
+				margin-left: 5%
+				border: none
+
+
+
+
+.all-themes 
+	display: none
+
+.post-image-preview 
+	padding: $padding_10px
+	display: flex
+	justify-content: center
+	overflow-x: auto
+	cursor: pointer
+	border-radius: $borderradius_10px
+	img 
+		height: auto
+		cursor: pointer
+		margin: 5px
+		min-width: 25%
+		max-width: 100%
+
+
+* 
+	margin: $margin_0
+
+.filled 
+	width: 26px !important
+
+.facebook-content 
+	margin-top: 60px
+
+.post-main-container 
+	padding: $padding_10px
+	padding-bottom: 0.5px
+	width: 480px
+	
+	border-radius: $borderradius_10px
+	background: $white
+	margin-top: 20px
+	margin-left: 15%
+	#header 
+		.circle 
+			width: 40px
+			height: 40px
+			background: $color_shuttle_gray_approx
+			
+			border-radius: $borderradius_50per
+			float: left
+
+		.post-text-container 
+			display: inline-block
+			padding: $padding_10px
+			width: 80%
+			input 
+				padding: $padding_10px 16px
+				
+				border-radius: 50px
+				width: 100%
+				border: 0
+				background: $color_athens_gray_approx
+				margin: -10px 4px
+				cursor: pointer
+				outline: none
+				font-size: 16px
+
+
+
+	#footer 
+		padding: 0
+		margin: 10px 0
+		border-top: 0.5px solid $color_alto_approx
+		display: flex
+		justify-content: center
+		background: ""
+		#item 
+			width: 100%
+			height: 40px
+			margin: 5px
+			
+			border-radius: $borderradius_5px
+			cursor: pointer
+			display: flex
+			justify-content: center
+			align-items: center
+			&:hover 
+				background: $color_black_haze_approx
+
+			&:active 
+				
+				transform: scale(0.9)
+
+			span 
+				font-size: 16px
+				display: inline-block
+				font-weight: 600
+				color: $color_shuttle_gray_approx
+				margin: 10px 5px
+				//If you use compass, instead of the line below you could use + user-select($select)
+				user-select: none
+
+			svg 
+				width: 20px
+
+			img 
+				width: 20px
+
+
+
+
+.user-post-content 
+	padding: 12.3%
+	padding-top: 5px
+	.user-post-container 
+		margin-left: 20px
+
+
+.float-circle 
+	position: fixed
+	bottom: 2.5%
+	right: 1%
+	background: $white
+	width: 50px
+	height: 50px
+	
+	border-radius: $borderradius_50per
+	
+	box-shadow: 0 -4px 46px -14px $black_75
+	cursor: pointer
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 20px
+	padding: 0
+	z-index: 999 !important
+	.fa 
+		margin-left: 10px
+
+	&:hover 
+		background: $concrete
+
+
+.float-box 
+	position: fixed
+	right: 1%
+	bottom: 12%
+	z-index: 999
+	.item 
+		width: 50px
+		height: 50px
+		
+		border-radius: $borderradius_50per
+		margin-top: 5px
+		cursor: pointer
+		position: relative
+		.button 
+			position: absolute
+			width: 22px
+			height: 22px
+			
+			border-radius: $borderradius_50per
+			background: $white
+			right: -5px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: $color_shuttle_gray_approx
+			visibility: hidden
+
+		.desc 
+			position: absolute
+			left: -155px
+			padding: 12px
+			max-width: 120px
+			padding-bottom: 5px
+			
+			border-radius: $borderradius_10px
+			background: $white
+			//If you use compass, instead of the line below you could use + user-select($select)
+			user-select: none
+			
+			box-shadow: -2px 4px 24px -12px $black_100
+			visibility: hidden
+			.content 
+				position: relative
+				.triangle 
+					content: ""
+					position: absolute
+					right: -20px
+					width: 0
+					top: 10px
+					height: 5px
+					//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+					border-top-right-radius: 5px
+					
+					border-bottom-right-radius: 5px
+					border-top: 10px solid transparent
+					border-left: 15px solid $white
+					border-bottom: 10px solid transparent
+
+				a 
+					display: block
+					color: $color_black_approx
+					font-weight: 600
+					text-decoration: none
+					text-overflow: ellipsis
+					white-space: nowrap
+					overflow: hidden
+					width: 120px
+					display: inline-block
+
+				span 
+					font-size: 14px
+					text-overflow: ellipsis
+					white-space: nowrap
+					overflow: hidden
+					width: 120px
+					display: inline-block
+
+
+
+		&:hover 
+			.button 
+				visibility: visible
+
+			.desc 
+				visibility: visible
+
+
+
+	img 
+		width: 100%
+		height: 100%
+		
+		border-radius: $borderradius_50per
+		position: absolute
+
+
+.message-big-pipe-container 
+	position: fixed
+	bottom: 0
+	right: 80px
+	height: 455px
+	display: flex
+	justify-content: flex-end
+	z-index: 992
+
+.message-container 
+	background: $white
+	height: 100%
+	width: 330px
+	//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+	border-top-left-radius: 10px
+	//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+	border-top-right-radius: 10px
+	
+	box-shadow: -2px 4px 24px -12px $black_100
+	margin-left: 20px
+	position: relative
+	z-index: 92
+	#header 
+		//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+		border-top-left-radius: 10px
+		//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+		border-top-right-radius: 10px
+		height: 50px
+		background: $white
+		
+		box-shadow: -11px 11px 60px -30px $color_shark_approx
+		border-bottom: 0.5px solid $color_alto_approx
+		position: absolute
+		top: 0
+		width: 100%
+		cursor: pointer
+		.info 
+			display: flex
+			align-items: center
+			justify-content: center
+			float: left
+			margin: 3.5px
+			padding-right: 10px
+			
+			border-radius: $borderradius_4px
+			cursor: pointer
+			height: 42px
+			&:hover 
+				background: $concrete
+
+			&:active 
+				background: $mercury
+
+			.circle 
+				width: 32px
+				height: 32px
+				
+				border-radius: $borderradius_50per
+				margin: 1.5px 5px
+
+			.name 
+				padding: 1.5px
+				//If you use compass, instead of the line below you could use + user-select($select)
+				user-select: none
+				p 
+					margin: 1px
+					font-weight: 600
+					font-size: 15px
+					color: $color_black_approx
+					text-overflow: ellipsis
+					white-space: nowrap
+					overflow: hidden
+					max-width: 115px
+
+				span 
+					font-size: 13px
+					display: block
+					margin-top: -2px
+					color: $color_shuttle_gray_approx
+
+
+
+		.icons 
+			float: right
+			margin: 5px 0
+			margin-right: 6px
+			.icon 
+				width: 30px
+				height: 30px
+				
+				border-radius: $borderradius_50per
+				margin: 5px 1px
+				float: right
+				cursor: pointer
+				text-align: center
+				display: flex
+				justify-content: center
+				align-items: center
+				svg 
+					@extend .extend_6
+
+				i 
+					@extend .extend_6
+
+				&:hover 
+					background: $color_athens_gray_approx
+
+
+
+
+	#body 
+		margin-top: 50px
+		position: absolute
+		width: 100%
+		height: 79%
+		overflow-y: auto
+		direction: rtl
+		transform: rotate(180deg)
+		scroll-behavior: smooth
+		.chat-history 
+			padding: $padding_5px
+			direction: ltr
+			transform: rotate(-180deg)
+			.message-con 
+				padding: $padding_5px !important
+				margin: 2px
+				margin-top: -10px
+				position: relative
+				.menu 
+					text-align: right
+					display: inline-block
+					visibility: hidden
+					.flex 
+						display: flex
+						justify-content: flex-end
+						align-items: center
+						align-content: center
+						.item 
+							cursor: pointer
+							width: 25px
+							height: 25px
+							
+							border-radius: $borderradius_50per
+							display: flex
+							justify-content: center
+							align-items: center
+							.reaction-con 
+								position: absolute
+								top: 0
+								padding: $padding_5px
+								padding-left: 10px
+								padding-right: 10px
+								
+								border-radius: $borderradius_25px
+								background: $white
+								display: none
+								justify-content: center
+								align-content: center
+								align-items: center
+								.reactions 
+									width: 30px
+									height: 30px
+									margin-left: 5px
+									margin-right: 5px
+									display: flex
+									justify-content: center
+									align-content: center
+									img 
+										width: 28px
+										height: 28px
+
+
+
+							&:hover 
+								background: $color_athens_gray_approx
+
+							svg 
+								width: 15px !important
+								height: 15px !important
+
+
+
+
+				&.left 
+					text-align: left
+					padding-left: 0
+					position: relative
+					margin-left: 0px
+					.box 
+						position: absolute
+						width: 35px
+						height: 100%
+						.circle-content 
+							position: relative
+							width: 100%
+							height: 100%
+							.image 
+								position: absolute
+								bottom: 10px
+								width: 30px
+								height: 30px
+								
+								border-radius: $borderradius_50per
+
+
+
+					.circle 
+						float: left
+						margin-left: 0
+						margin-top: 2px
+
+					.content 
+						background: $color_athens_gray_approx
+						color: $color_black_approx
+						margin-left: 35px
+
+					.menu .flex 
+						justify-content: flex-start
+
+
+				.status 
+					position: absolute
+					width: 20px
+					height: 100%
+					right: -7px
+					margin-top: -10px
+					.status-content 
+						position: relative
+						width: 100%
+						height: 100%
+						display: flex
+						justify-content: center
+						.image 
+							width: 15px
+							height: 15px
+							
+							border-radius: $borderradius_50per
+							position: absolute
+							bottom: 0
+							background: $color_athens_gray_approx
+
+
+
+				.circle 
+					width: 30px
+					height: 30px
+					background: $black
+					
+					border-radius: $borderradius_50per
+					margin: 5px
+					margin-top: -5px
+
+				&.right 
+					text-align: right
+					.circle 
+						float: right
+						margin-right: 0
+						width: 12px
+						height: 12px
+						margin-top: 20px
+						background: $color_silver_sand_approx
+
+					.content 
+						color: $white
+
+
+				.content 
+					padding: $padding_8px 12px
+					padding-bottom: 8px
+					padding-right: 12px
+					max-width: 125px
+					display: inline-block
+					text-align: left
+					margin: 1px
+					font-size: 15px
+					
+					border-radius: $borderradius_4px
+					.desc 
+						margin-left: -20px
+
+					&.right 
+						//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+						border-top-left-radius: 25px
+						
+						border-bottom-left-radius: 25px
+						margin-right: 15px
+
+					&.left 
+						//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+						border-top-right-radius: 25px
+						
+						border-bottom-right-radius: 25px
+
+
+				.main-message-container:hover .menu 
+					visibility: visible
+
+
+			.typing-left 
+				display: flex
+				justify-content: flex-start
+				.image 
+					width: 30px
+					height: 30px
+					
+					border-radius: $borderradius_50per
+					margin: 5px
+					margin-left: 10px
+
+				.info 
+					background: $color_athens_gray_approx
+					color: $color_black_approx
+					padding: $padding_8px 18px
+					max-width: 150px
+					text-align: left
+					margin: 1px
+					font-size: 15px
+					
+					border-radius: $borderradius_25px
+
+
+
+
+	#footer 
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 11%
+		display: flex
+		align-items: center
+		background: $white
+		.item 
+			width: 28px
+			height: 28px
+			cursor: pointer
+			margin: 3px
+			float: left
+			display: flex
+			justify-content: center
+			align-items: center
+			
+			border-radius: $borderradius_50per
+			&:hover 
+				background: $color_athens_gray_approx
+
+			svg 
+				width: 24px
+				fill: $color_heather_approx
+
+			&:last-child 
+				position: absolute
+				right: 10px
+
+			&:first-child 
+				margin-left: 5px
+
+			&.last 
+				position: relative !important
+				margin-left: 15px
+
+
+		.message-textarea 
+			width: 37%
+			background: $color_athens_gray_approx
+			
+			border-radius: $borderradius_15px
+			min-height: 23px
+			padding: $padding_8px 10px
+			outline: none
+			margin: 4px
+			&.box.focus 
+				position: absolute
+				width: 70%
+				margin-left: 35px
+
+
+
+
+.notification-float-container 
+	position: fixed
+	left: 50px
+	width: 325px
+	max-height: 80%
+	bottom: 20px
+	padding: $padding_10px
+	background: transparent
+	#notification-float-item 
+		min-width: 100%
+		padding-right: 10px
+		border-radius: $borderradius_10px
+		background: $white
+		float: left
+		margin-top: 10px
+		cursor: pointer
+		&.status
+			background: rgba(0,0,0,0.85)
+			#body
+				.box
+					.info
+						p
+							color: #FFF
+							font-weight: 700
+				#profile_pic 
+					display: flex
+					justify-content: center
+					align-content: center
+					svg
+						fill: #FFF
+						width: 30px
+
+
+		#header 
+			padding: $padding_10px
+			padding-bottom: 0
+
+		#body 
+			min-height: 40px
+			.box 
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				.info 
+					a 
+						color: $color_black_approx
+						font-weight: 700
+						text-decoration: none
+						margin-right: 5px
+
+					span 
+						font-size: 14px
+
+					p 
+						float: left
+
+					small 
+						float: right
+						font-size: 12px
+						margin: 10px
+
+
+
+			#profile_pic 
+				width: 50px
+				height: 50px
+				
+				border-radius: $borderradius_50per
+				margin: 10px
+				position: relative
+				img 
+					width: 50px
+					height: 50px
+					
+					border-radius: $borderradius_50per
+
+				span 
+					width: 25px
+					height: 25px
+					
+					border-radius: $borderradius_50per
+					background: $color_athens_gray_approx
+					position: absolute
+					right: -10px
+					bottom: -5px
+					img 
+						width: 25px
+						height: 25px
+
+
+
+			.info 
+				margin-left: 10px
+
+
+		#footer 
+			padding: $padding_10px
+
+
+
+.no-content-content 
+	height: calc(100vh - 60px)
+	text-align: center
+	.svg 
+		display: flex
+		justify-content: center
+		align-content: center
+		align-items: center
+		padding-top: 150px
+		svg 
+			width: 110px
+			display: block
+
+
+	h3 
+		display: block
+		color: $color_shuttle_gray_approx
+		font-size: 21px
+
+	span 
+		text-align: center
+		display: flex
+		justify-content: center
+		align-content: center
+		align-items: center
+		p 
+			max-width: 450px
+			font-size: 18px
+			color: $color_shuttle_gray_approx
+			line-height: 19px
+
+
+	button 
+		padding: $padding_10px
+		width: 212px
+		border: none
+		background: $color_azure_radiance_approx
+		color: $white
+		font-size: 17px
+		font-weight: 600
+		
+		border-radius: $borderradius_5px
+		margin-bottom: 10px
+
+	a 
+		text-decoration: none
+		font-size: 17px
+		color: $color_azure_radiance_approx
+		font-weight: 600
+		margin: 10px
+		margin-bottom: 15px
+
+
+.messages-body 
+	.facebook-left-content 
+		width: 338px !important
+		border-right: 1px solid $color_black_haze_approx !important
+		.header h2 
+			margin-bottom: 15px !important
+
+		.body .left-content li 
+			.circle 
+				width: 50px
+				height: 50px
+
+			.info 
+				span 
+					display: block
+
+				small 
+					font-weight: 400
+
+
+
+
+	.facebook-right-content 
+		left: 338px !important
+		width: calc(100vw - 340px)
+		border-left: 1px solid $color_alto_approx
+		main .message-container 
+			width: auto !important
+			margin: $margin_0 !important
+			//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+			border-top-left-radius: 0 !important
+			//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+			border-top-right-radius: 0 !important
+			position: relative !important
+			#header 
+				//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+				border-top-left-radius: 0 !important
+				//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+				border-top-right-radius: 0 !important
+				height: 59px
+				cursor: default !important
+				border-bottom: 1px solid $color_black_haze_approx !important
+				.info 
+					height: auto !important
+					cursor: default !important
+					padding: $padding_5px
+					margin-left: 10px
+					.circle 
+						background: $black
+						width: 40px
+						height: 40px
+
+					&:hover 
+						background: none !important
+
+
+				.icons 
+					padding: $padding_5px
+					.icon 
+						width: auto !important
+						height: auto !important
+						margin: 5px
+						&:hover 
+							background: none !important
+
+						svg 
+							width: 32px
+
+						path 
+							fill: $color_azure_radiance_approx
+
+
+
+
+			.messages-body-tab 
+				display: flex
+				position: relative
+				#body 
+					margin-top: 60px !important
+					width: 67%
+					position: absolute
+					background: $white
+					height: calc(100vh - 180px)
+					.chat-history .message-con .content 
+						max-width: 300px !important
+
+
+				#user-info 
+					margin-top: 60px !important
+					width: 33%
+					height: calc(100vh - 120px)
+					position: absolute
+					right: 0
+					background: $white
+					border-left: 0.5px solid $color_black_haze_approx
+					.top 
+						text-align: center
+						padding: $padding_10px
+						.div 
+							display: flex
+							justify-content: center
+							.circle 
+								width: 100px
+								height: 100px
+								background: $black
+								
+								border-radius: $borderradius_50per
+								display: block
+
+
+						h4 
+							display: block
+							margin: 10px
+							margin-bottom: 5px
+							font-size: 20px
+
+						p 
+							font-size: 14px
+
+
+					.set-li 
+						.set 
+							display: none
+							li 
+								padding: $padding_10px
+								list-style-type: none
+								position: relative
+								cursor: pointer
+								&:last-child 
+									margin-bottom: 10px
+
+								span 
+									font-size: 14px
+									margin-left: 5px
+									//If you use compass, instead of the line below you could use + user-select($select)
+									user-select: none
+
+								.stat 
+									position: absolute
+									right: 15px
+									top: 5px
+									width: 30px
+									height: 30px
+									background: $concrete
+									
+									border-radius: $borderradius_50per
+									display: flex
+									justify-content: center
+									align-items: center
+									align-content: center
+									svg 
+										width: 22px
+										height: 22px
+
+									&.theme 
+										background: $white
+										width: 0
+										height: 0
+										padding: 4px
+										border: 8px solid $color_azure_radiance_approx
+
+									&.emojis 
+										background: none
+										svg 
+											fill: $color_azure_radiance_approx
+
+
+
+
+
+						.main-set 
+							padding: 14px
+							border-top: 1px solid $color_black_haze_approx
+							cursor: pointer
+							position: relative
+							&:hover 
+								background: $concrete
+
+							.stat 
+								position: absolute
+								right: 15px
+								width: 30px
+								height: 30px
+								
+								border-radius: $borderradius_50per
+								top: 10px
+								display: flex
+								justify-content: center
+								align-content: center
+								align-items: center
+								//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+								transition: 0.2s
+								
+								transform: rotate(180deg)
+								&.rotate 
+									
+									transform: rotate(90deg) !important
+
+								svg 
+									width: 15px
+									height: 15px
+									fill: $color_heather_approx
+
+
+
+						h3 
+							font-size: 14px
+							color: $color_silver_chalice_approx
+							font-weight: 700
+
+
+
+				.main-body #footer 
+					height: 60px !important
+					background: $white !important
+					position: fixed
+					bottom: 0
+					width: 65%
+					.item 
+						width: 30px !important
+						height: 30px !important
+						svg 
+							fill: $color_azure_radiance_approx
+							width: 26px !important
+							height: 26px !important
+
+
+					.message-textarea 
+						width: 50%
+
+
+
+
+
+
+.floating-box 
+	z-index: 999 !important
+
+.scrollbar 
+	overflow-x: hidden !important
+	&:hover::-webkit-scrollbar-thumb 
+		background: $color_ghost_approx
+
+	&:hover::-webkit-scrollbar-track 
+		background: $color_athens_gray_approx
+
+
+.hc 
+	.desc 
+		position: absolute
+		margin-top: -70px
+		padding: $padding_8px
+		background: $black
+		background: $black_75
+		
+		border-radius: $borderradius_5px
+		color: $white
+		font-size: 14px
+		visibility: hidden
+		max-width: 300px
+		z-index: 999
+		&.bot 
+			margin-bottom: -100px
+			margin-top: 0
+
+
+	&:hover .desc 
+		visibility: visible
+
+
+.no-content 
+	padding: $padding_10px
+	width: auto
+	
+	border-radius: $borderradius_10px
+	margin-top: 10px
+	text-align: center
+	background: $white
+	
+	box-shadow: -1px -2px 27px -23px $black_75
+	svg 
+		width: 130px
+
+	h2 
+		font-weight: 800
+		color: $color_shuttle_gray_approx
+		margin-top: 10px
+
+	p 
+		color: $color_shuttle_gray_approx
+		font-size: 18px
+
+	div 
+		padding: $padding_8px
+		
+		border-radius: $borderradius_5px
+		background: $color_mariner_approx
+		color: $white
+		width: 100px
+		font-weight: 600
+		margin-top: 20px
+		cursor: pointer
+		//If you use compass, instead of the line below you could use + user-select($select)
+		user-select: none
+		&:active 
+			
+			transform: scale(0.9)
+
+
+.inbox-preload
+	width: auto
+	background: $white
+	padding: 5px
+	@extend .extend_7
+	.circle
+		width: 50px
+		height: 50px
+		background: $color_athens_gray_approx
+		border-radius: 50%
+		margin-right: 5%
+
+	.box
+		width: 72%
+		height: 25px
+		border-radius: 25px
+		background: $color_athens_gray_approx
+		margin-right: 5%
+
+.post-preload 
+	width: auto
+	background: $white
+	
+	border-radius: $borderradius_10px
+	margin-top: 10px
+	padding-bottom: 10px
+	#header 
+		padding: $padding_20px
+		.preload-name 
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			.circle 
+				width: 30px
+				height: 30px
+				
+				border-radius: $borderradius_50per
+				background: $color_athens_gray_approx
+
+			.info 
+				width: 250px
+				
+				border-radius: $borderradius_25px
+				height: 30px
+				background: $color_athens_gray_approx
+				margin-left: 20px
+
+
+
+	#body 
+		
+		border-radius: $borderradius_5px
+		background: $color_athens_gray_approx
+		height: 250px
+		margin: 10px
+
+
+.profile-hover-container 
+	.output 
+		width: 300px
+		height: 200px
+		
+		border-radius: $borderradius_10px
+		background: $white
+		visibility: hidden
+		z-index: 999
+		position: absolute
+		&.left 
+			left: -100px
+
+hr 
+	&.hr-25-5 
+		width: 90% !important
+		margin-left: 2.5% !important
+		margin-top: 5px !important
+
+	&.hr-94-10 
+		width: 94% !important
+		margin: 10px !important
+
+
+.nav-center .item.active 
+	border-bottom: 3px solid $color_azure_radiance_approx
+	
+	border-bottom-left-radius: 0
+	
+	border-bottom-right-radius: 0
+	margin-bottom: 0
+	svg 
+		fill: $color_azure_radiance_approx
+		height: 25px !important
+		width: auto !important
+
+
+.user-profile-all-post-content .user-post-container 
+	margin-left: 0
+
+.heading h3 
+	margin-left: 15px
+	margin-bottom: 5px
+	color: $color_shuttle_gray_approx
+	font-size: 17px
+
+[contenteditable][placeholder]:empty::before 
+	color: $gray
+	background: transparent
+	cursor: text
+	content: attr(placeholder)
+	color: $color_manatee_approx
+
+.home-body .body 
+	.left-content 
+		width: 23.2%
+		height: 100%
+		position: fixed
+		left: 0
+		padding-top: 15px
+		li 
+			list-style-type: none
+			padding: 6px
+			margin: $margin_0 10px
+			margin-right: 0
+			cursor: pointer
+			
+			border-radius: $borderradius_4px
+			display: flex
+			align-items: center
+			&:hover 
+				background: #E4E6EB
+
+			div 
+				&.circle 
+					@extend .extend_4
+
+				&.info 
+					display: inline-block
+					margin: 6px 8px
+					font-weight: 600
+					font-size: 15px
+					//If you use compass, instead of the line below you could use + user-select($select)
+					user-select: none
+					color: $color_black_approx
+
+
+			img 
+				@extend .extend_4
+
+
+
+	.center-content 
+		width: 52%
+		position: absolute
+		left: 23.2%
+		padding-left: 0
+		padding-right: 0
+		padding-top: 0
+		.home-content 
+			padding: $padding_5px
+			align-items: center
+			story .story-container 
+				padding: $padding_5px
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-top: 10px
+				position: relative
+				.prev 
+					@extend .extend_5
+					left: 5%
+					display: none
+
+				.next 
+					@extend .extend_5
+					right: 4%
+
+				.item 
+					width: 112px
+					height: 198px
+					background: $white
+					margin-left: 8px
+					
+					border-radius: $borderradius_10px
+					cursor: pointer
+					position: relative
+					display: flex
+					justify-content: center
+					&.me 
+						.top 
+							width: 100%
+							height: 65%
+							position: absolute
+							img 
+								object-fit: fill
+								width: 100%
+								height: 100%
+								//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+								border-top-left-radius: 10px
+								//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+								border-top-right-radius: 10px
+								//If you use compass, instead of the line below you could use + user-select($select)
+								user-select: none
+
+
+						.bot 
+							position: absolute
+							width: 100%
+							height: 35%
+							max-height: 35%
+							background: $white
+							bottom: 0
+							
+							border-bottom-left-radius: 10px
+							
+							border-bottom-right-radius: 10px
+							text-align: center
+							div 
+								display: block
+								font-weight: 580
+								&:nth-child(1) 
+									margin-top: 13%
+
+
+
+						.circle 
+							position: absolute
+							width: 32px
+							height: 32px
+							top: 55%
+							padding: 0
+							.content 
+								width: 100%
+								height: 100%
+								
+								border-radius: $borderradius_50per
+								background: $color_azure_radiance_approx
+								border: 4px solid $white
+								margin-left: -5px
+
+
+
+					.picture 
+						position: absolute
+						width: 30px
+						height: 30px
+						background: $color_azure_radiance_approx
+						
+						border-radius: $borderradius_50per
+						left: 10px
+						top: 10px
+						padding: 4px
+						.content 
+							background: $white
+							width: 100%
+							height: 100%
+							
+							border-radius: $borderradius_50per
+
+
+					.story 
+						width: 100%
+						height: 100%
+						position: absolute
+						object-fit: fill
+						overflow: hidden
+						border-radius: $borderradius_10px
+						background: rgba(133,139,160)
+						img 
+							width: 100%
+							height: 100%
+							object-fit: cover
+							
+							border-radius: $borderradius_10px
+							background: $white
+
+
+
+
+	.right-content 
+		width: 26.3%
+		height: 92%
+		position: fixed
+		right: 0
+
+
+.right-content .main-right-content-content 
+	padding: $padding_10px
+	overflow-y: auto
+	padding-bottom: 15px
+	h4 
+		color: $color_shuttle_gray_approx
+		margin: 10px
+		font-size: 17px
+
+	.right-content-content 
+		padding: $padding_10px
+		cursor: pointer
+		
+		border-radius: $borderradius_5px
+		display: flex
+		align-items: center
+		&.marginLeft 
+			margin-left: 20px
+			padding: $padding_8px
+			font-size: 13px
+			color: $color_shuttle_gray_approx
+			.image 
+				width: 25px
+				height: 25px
+
+
+		&:hover 
+			background: #E4E6EB
+
+		.image 
+			display: inline-block
+			width: 30px
+			height: 30px
+			
+			border-radius: $borderradius_50per
+			&.pf 
+				width: 28px
+				height: 28px
+
+
+		.info 
+			display: inline-block
+			margin: 5px 10px
+
+		&.block 
+			display: block
+			.image 
+				width: 45px
+				height: 45px
+
+			.info 
+				margin-top: 5px
+				position: absolute
+
+			.buttons 
+				padding: $padding_5px
+				display: flex
+				margin-left: 10%
+				.item 
+					padding: $padding_8px
+					text-align: center
+					width: 120px
+					background: $color_mischka_approx
+					margin: 5px
+					
+					border-radius: $borderradius_5px
+					color: $color_black_approx
+					font-weight: 600
+					cursor: pointer
+					&.active 
+						background: $color_mariner_approx
+						color: $white
+
+
+
+
+		&.imageContent .image 
+			min-height: 55px
+			max-width: 110px
+			min-width: 110px
+			
+			border-radius: $borderradius_10px
+
+
+
+.facebook-left-content .header 
+	position: relative
+	.icons 
+		display: flex
+		position: absolute
+		right: 15px
+		top: 10px
+		.icon 
+			width: 35px
+			height: 35px
+			
+			border-radius: $borderradius_50per
+			background: $color_wild_sand_approx
+			margin: 5px
+			cursor: pointer
+			display: flex
+			justify-content: center
+			align-items: center
+			align-content: center
+			svg 
+				width: 20px
+				height: 20px
+				fill: $black
+				stroke: $black
+
+			path 
+				fill: $black
+				stroke: $black
+
+
+
+.stories-body 
+	.facebook-left-content 
+		.header 
+			a 
+				text-decoration: none
+				color: $color_shuttle_gray_approx
+				font-size: 14px
+
+			.icons .icon 
+				width: 35px
+				height: 35px
+				background: $color_athens_gray_approx
+				path 
+					fill: $color_shuttle_gray_approx
+		.header.discover
+			margin-bottom: 0px
+			padding-bottom: 0px
+			height: auto
+			h2
+				margin: 5px
+		h3
+			margin-left: 5px
+
+		.prof.discover
+			padding: 5px
+			padding-bottom: 10px
+			cursor: pointer
+
+			.circle
+				background: $color_athens_gray_approx
+				@extend .extend_7
+
+		.prof 
+			padding: 20px
+			padding-bottom: 30px
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			border-bottom: 1px solid $color_black_haze_approx
+			.circle 
+				width: 60px
+				height: 60px
+				
+				border-radius: $borderradius_50per
+				margin-right: 10px
+
+			p 
+				font-weight: 600
+
+
+		.story-content-body 
+			padding: 15px
+			position: relative
+			textarea 
+				width: 290px
+				
+				border-radius: $borderradius_5px
+				resize: none
+				height: 146px
+				padding: 25px 15px
+				font-size: 15px
+				font-family: $font_0
+				outline: none
+				border: 1px solid $color_athens_gray_approx
+				&:focus 
+					border: 1px solid $color_azure_radiance_approx
+				.switch
+					right: auto
+					left: 2%
+					top: 10%
+					position: absolute 
+			.sticker-container
+				padding: 10px
+				.header
+					display: flex
+					overflow: hidden
+					.tabs
+						min-width: 40px
+						min-height: 40px
+						background: $black
+						margin: 2.5px
+						cursor: pointer
+				.body
+					padding: 5px
+					height: 250px
+					overflow-y: auto
+					.sticker
+						width: 80px
+						height: 80px
+						margin: 5px
+						background: $color_athens_gray_approx
+						display: inline-block
+						cursor: pointer
+			.list-picker.add
+				.form
+					display: flex
+					.form-group
+						padding: 5px
+						input
+							padding: 8px 10px
+							border-radius: 5px
+							border: 1px solid $color_athens_gray_approx
+							width: 80%
+							outline: none
+				.main-picker
+					@extend .extend_7
+
+					.square
+						padding-left: $padding_10px
+						padding-right: $padding_10px
+						width: 25%
+						text-align: center
+						border-radius: $borderradius_5px
+						user-select: none
+						&:hover
+							background: $color_athens_gray_approx
+						&:active
+							transform: $transformScale091
+
+			.list-picker 
+				padding: 10px
+				border: 1px solid $color_athens_gray_approx
+				
+				border-radius: $borderradius_5px
+				margin-top: 5px
+				z-index:999
+				background: $white
+
+				.main-picker 
+					display: flex
+					cursor: pointer
+					position: relative
+					.square 
+						padding: 5px
+						font-size: 15px
+						font-weight: 600
+						color: $color_shuttle_gray_approx
+
+					.main-font 
+						padding: 5px
+					.main-font.brushes
+						display: flex
+						justify-content: center
+						align-content: center
+						align-items: center
+						.brush-sizes 
+							background: black
+							width: 200px
+						.brush-sizes.size-1
+							padding: 2px
+						.brush-sizes.size-2
+							padding: 4px
+						.brush-sizes.size-3
+							padding: 6px
+						.brush-sizes.size-4
+							padding: 8px
+						.brush-sizes.size-5
+							padding: 10px
+
+					svg 
+						position: absolute
+						right: 10px
+						top: 10px
+						width: 10px
+
+
+				.picker-container 
+					position: absolute
+					border: 1px solid $color_athens_gray_approx
+					
+					border-radius: 4px
+					width: 316px
+					margin: 15px -10px
+					padding-top: 5px
+					padding-bottom: 5px
+					display: none
+					background: $white
+					.item 
+						display: flex
+						padding: 5px
+						.name 
+							width: 50%
+							padding-left: 10px
+
+
+					li 
+						
+						border-radius: 4px
+						padding: 4px
+						&:hover 
+							background: none
+				.picker-container.brushes
+					li
+						display: flex
+						justify-content: center
+						.brush-sizes 
+							background: black
+							width: 200px
+						.brush-sizes.size-1
+							padding: 2px
+						.brush-sizes.size-2
+							padding: 4px
+						.brush-sizes.size-3
+							padding: 6px
+						.brush-sizes.size-4
+							padding: 8px
+						.brush-sizes.size-5
+							padding: 10px
+
+
+
+			.content-picker 
+				padding-top: 10px
+				border: 1px solid $color_athens_gray_approx
+				
+				border-radius: $borderradius_5px
+				margin-top: 10px
+				color: $color_shuttle_gray_approx
+				background: $white
+				padding-bottom: 0
+				z-index:999
+				p 
+					margin-left: 20px
+
+				.main-picker 
+					padding: 10px
+					margin-top: 0
+					.item 
+						width: 25px
+						height: 25px
+						
+						border-radius: $borderradius_50per
+						margin: 6px
+						display: inline-block
+						cursor: pointer
+						img 
+							width: 25px
+							height: 25px
+							
+							border-radius: $borderradius_50per
+
+						&.active 
+							border: 2.5px solid $color_mariner_approx
+
+				.footer 
+					display: flex
+					justify-content: center
+					align-items: center
+					padding: 12px
+					cursor: pointer
+					&:hover 
+						background: $color_athens_gray_approx
+
+					svg 
+						width: 12px
+
+		.story-content-body.discover
+			padding-top: 0px
+			height: auto
+			li.active
+				background: $mercury
+				.circle
+					background: none
+			li
+				margin: 0px
+				padding: 10px
+				list-style-type: none
+				cursor: pointer
+				border-radius: 5px
+				&:hover 
+					background: $color_athens_gray_approx
+				.circle
+					width: 40px
+					height: 40px
+					padding: 2.5px
+					border: 2.5px solid $color_azure_radiance_approx
+					background: none
+					display: inline-block
+					border-radius: 50%
+					margin-right: 5px
+
+				.info 
+					display: inline-block
+					small
+						font-weight: 400
+
+		.body .left-content 
+			height: 72.5% !important
+
+		.footer.main 
+			position: fixed
+			height: 11%
+			bottom: 0
+			width: 360px
+			display: flex
+			justify-content: center
+			align-items: center
+			z-index: 999
+			.mybuttons 
+				padding: 10px
+				margin-right: 8px
+				
+				border-radius: 4px
+				width: 140px
+				text-align: center
+				cursor: pointer
+				margin-top: 10px
+				background: $color_athens_gray_approx
+				&.active 
+					background: $color_azure_radiance_approx
+					&:hover 
+						background: $color_azure_radiance_approx !important
+
+					span 
+						color: $white
+
+
+				span 
+					color: $color_black_approx
+					font-weight: 600
+					cursor: pointer
+					font-size: 17px
+					z-index: 999
+
+
+
+
+	.facebook-right-content .story-main-content 
+		padding: 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		align-content: center
+		height: calc(100vh - 60px)
+		width: calc(100vw - 380px)
+		position: fixed
+		bottom: 0
+		right: 0
+		.stories-picker 
+			width: 220px
+			height: 330px
+			cursor: pointer
+			margin: 10px
+			
+			border-radius: $borderradius_10px
+			&.photo 
+				background-image: linear-gradient(to bottom,$color_royal_blue_approx,$color_jordy_blue_approx)
+
+			&.text 
+				background-image: linear-gradient(to bottom,$color_amethyst_approx,$color_cranberry_approx)
+
+			.circle 
+				width: 40px
+				height: 40px
+				
+				border-radius: $borderradius_50per
+				background: $white
+				display: block
+				margin-top: 60%
+				display: flex
+				justify-content: center
+				align-items: center
+				img 
+					width: 22.5px
+
+				span 
+					font-size: 18px
+					font-weight: 600
+
+
+			p 
+				display: block
+				font-weight: 600
+				color: $white
+				font-size: 15px
+				margin: 5px
+
+
+
+		.preview-container 
+			padding: 15px
+			width: 93%
+			background: $white
+			height: 75vh
+			
+			border-radius: $borderradius_10px
+			margin-top: 20px
+			p 
+				font-weight: 600
+
+			.main-container 
+				padding-top: 10px
+				padding-bottom: 10px
+				background: $color_woodsmoke_approx
+				margin-top: 13px
+				
+				border-radius: $borderradius_10px
+				height: 88%
+				display: flex
+				justify-content: center
+				align-content: center
+				.story 
+					min-wdith: 231px
+					min-height: 410px
+					width: 231px
+					height: 410px
+					background: $white
+					
+					border-radius: $borderradius_10px
+					background-repeat: no-repeat
+					object-fit: fill
+					background-size: cover
+					display: flex
+					align-content: center
+					justify-content: center
+					align-items: center
+					position: relative
+					z-index: 999
+					.appended-image-background 
+						max-height: 100%
+						width: 100%
+						position: absolute
+						z-index: -1
+						object-fit: cover
+						user-drag: none
+						//If you use compass, instead of the line below you could use + user-select($select)
+						user-select: none
+					.appended-image 
+						max-height: 100%
+						position: absolute
+						object-fit: cover
+						user-drag: none
+						user-select: none
+						cursor: grab
+						&:active
+							cursor: grabbing
+					.appended-text
+						padding: $padding_2px
+						padding-top: $padding_10px
+						position: absolute
+						top: 50px
+						font-size: 18px
+						border: 2px solid transparent
+						cursor: move
+						&:hover
+							.move
+								visibility: visible
+						.textarea
+							outline-color: $color_azure_radiance_approx
+							color: $white
+							font-weight: 600
+							user-select: none
+							text-align: center
+							padding: $padding_10px
+							cursor: text
+							z-index: 888
+						[placeholder] 
+							text-align: center
+							color: $white
+						.move
+							visibility: hidden
+							.circle
+								position: absolute
+
+								width: 20px
+								height: 20px
+								background: $white
+								border-radius: $borderradius_50per
+								cursor: move
+							&:hover
+								.circle
+									visibility: visible
+							&:active
+								.circle
+									visibility: visible
+							
+					.main-textbox 
+						width: 80%
+						height: 98%
+						margin-top: 1%
+						font-size: 18px
+						color: $white
+						font-weight: 600
+						cursor: default
+						text-transform: uppercase
+						text-align: center
+						background: none
+						border: none
+						display: flex
+						justify-content: center
+						align-items: center
+						align-content: center
+						//If you use compass, instead of the line below you could use + user-select($select)
+						user-select: none
+
+				
+				canvas
+					position: absolute
+					top: 0
+					width: 100%
+					height: 100%
+	.facebook-left-content.discover
+		width: 350px
+	.facebook-right-content.discover
+		overflow-x: hidden
+		.story-main-content
+			background: $black
+			position: fixed
+		
+			.user-main-story.no-story-content
+				cursor: pointer
+				display: flex
+				justify-content: center
+				align-content: center
+				align-items: center
+				color: $white
+			.user-main-story
+				min-width: 273px
+				width: 273px
+				height: 485px
+				background: $black_85
+				border-radius: 10px
+				margin-top: -20px
+				position: relative
+				object-fit: fill
+				overflow: hidden
+				.story-src 
+					width: 273px
+					height: 485px
+					object-fit: cover
+					
+					border-radius: $borderradius_10px
+					background: $white
+					top: 0
+					z-index: -1
+					user-drag: none
+					user-select: none
+				.top
+					position: absolute
+					top: 0
+					width: 100%
+					z-index: 999
+					.story-count
+						display: flex
+						padding: 5px 10px
+						.items
+							width: 100%
+							height: 5px
+							border-radius: 25px
+							background: #6D686C
+							margin: 2px
+							.timer-value
+								background: #E6E6E6
+								width: 0%
+								height: 5px
+								border-radius: 25px
+								&.done
+									background: #E6E6E6
+									width: 100%
+
+					.info
+						display: flex
+						padding: 5px
+						align-items: center
+						.circle
+							width: 35px
+							height: 35px
+							margin: 2.5px
+							border-radius: 50%
+							background: $white
+						p
+							color: $white
+							margin-left: 5px
+							margin-right: 5px
+							width: 85px
+							font-weight: 600
+							text-overflow: ellipsis
+							white-space: nowrap
+							overflow: hidden
+							font-size: 15px
+						small
+							color: $white
+						.icon
+							width: 30px
+							height: 30px
+							margin: 5px
+							cursor: pointer
+							@extend .extend_7
+							svg
+								width: 30px
+								height: 30px
+								fill: $white
+							&:last-child
+								width: 20px
+								height: 20px
+
+			.story-buttons
+				width: 34%
+				height: 485px
+				cursor: pointer
+				margin-top: -20px
+				position: absolute
+				.icons
+					position: relative
+					margin: 30px
+					.icon
+						width: 50px
+						height: 50px
+						border-radius: 50%
+						background: #A6A4A2
+						@extend .extend_7
+						svg
+							width: 22px
+							height: 22px
+							fill: #606770
+				&:hover
+					.icons
+						margin: 32.5px
+						.icon
+							background: $white
+								
+
+			.story-buttons.left
+				left: 20px		
+				@extend .extend_9
+				.icons
+					.icon
+						transform: rotate(180deg)
+			.story-buttons.right
+				right: 20px
+				@extend .extend_8
+
+		.story-reaction-container
+			position: fixed
+			bottom: 2.5px
+			height: 50px
+			width: 100%
+			@extend .extend_7
+			width: calc(100vw - 370px)
+			.story-reply-container
+				width: 26%
+				margin-right: 30px
+				.story-reply-textarea
+					width: 100%
+					border: 1px solid $white
+					border-radius: 25px
+					padding: 8px 12px
+					outline: none
+					background: none
+					color: $white
+					font-size: 16px
+			.story-reactions
+				@extend .extend_7
+				.item
+					width: 40px
+					height: 40px
+					margin: 5px
+					cursor: pointer
+					&:hover
+						transform: scale(1.2)
+.settings-body 
+	background: $white !important
+	.facebook-right-content 
+		background: $white
+		min-height: calc(100vh - 60px)
+		left: 361.5px
+		.settings-con 
+			padding: 10px
+			.header 
+				padding: 10px 15px
+				h2 
+					font-size: 22px
+
+
+			.main-container 
+				padding: 5px 15px
+				.container 
+					border-top: 1px solid $color_alto_approx
+					padding: 10px
+					display: flex
+					.section1 
+						width: 18%
+						height: 100%
+						p 
+							margin-top: 10px
+							font-weight: 700
+
+
+					.section2 
+						height: 100%
+						width: 82%
+						&.full 
+							width: 100%
+							li div 
+								display: flex
+
+							&:nth-child(1) p 
+								color: $color_shuttle_gray_approx !important
+
+
+						li 
+							padding: 10px
+							border-bottom: 1px solid $color_black_haze_approx
+							list-style-type: none
+							padding-left: 0
+							margin-left: -10px
+							div 
+								
+								border-radius: 2px
+								cursor: pointer
+								padding: 10px
+								h4 
+									width: 22.5%
+									color: $color_black_approx
+
+								&:hover 
+									background: $color_athens_gray_approx
+
+
+							a 
+								text-decoration: none
+
+							small 
+								color: $color_shuttle_gray_approx
+
+
+						p 
+							color: $color_shuttle_gray_approx
+							width: 60%
+
+						hr 
+							width: 98%
+							margin: 10px
+							margin-left: 2%
+
+
+					&:nth-child(1) p 
+						color: $black !important
+						&.bold 
+							font-weight: 700
+
+
+
+
+
+
+	.facebook-settings-content-left 
+		width: 312px
+		position: absolute
+		left: 0
+		border-right: 1px solid right
+		background: $white
+		padding: 10px 20px
+		padding-right: 30px
+		.header 
+			padding: 10px
+
+		.body 
+			padding: 10px
+			margin-top: 0
+			a 
+				margin: 0
+				padding: 10px
+				display: flex
+				padding-left: 6px
+				justify-content: flex-start
+				align-content: center
+				align-items: center
+				
+				border-radius: 6px
+				text-decoration: none
+				font-weight: 600
+				color: $color_black_approx
+				&:hover 
+					background: $color_athens_gray_approx
+
+				&.active 
+					background: $color_athens_gray_approx
+
+				.circle 
+					width: 25px
+					height: 25px
+					margin-top: 0
+					margin-right: 15px
+					p 
+						margin-left: 00px
+						font-weight: 600
+						color: $color_black_approx
+
+
+
+
+
+
+.facebook-content.photo-body .photo-post-preview-main-container 
+	display: flex
+	width: 100vw
+	height: calc(100vh - 60px)
+	.photo-post-preview-left-container 
+		width: 72.3%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		align-content: center
+		.main-background 
+			width: calc(100vw - 27.7%)
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+			z-index: 1
+			background: $color_mine_shaft_approx !important
+
+		.main-function 
+			width: calc(100vw - 27.7%)
+			position: absolute
+			z-index: 100
+			left: 0
+			.content 
+				position: absolute
+				background: transparent
+				display: flex
+				justify-content: center
+				align-content: center
+				align-items: center
+				z-index: 999
+				&.left 
+					left: 0
+					width: 100px
+					height: 100%
+					.button svg 
+						
+						transform: rotate(180deg)
+
+
+				&.right 
+					right: 0
+					width: 100px
+					height: 100%
+
+				&.top 
+					top: 0
+					width: 100%
+					height: 100px
+					justify-content: flex-end !important
+
+				.button 
+					padding: 12.5px
+					width: 24px
+					height: 24px
+					background: $white
+					
+					border-radius: $borderradius_50per
+					display: flex
+					justify-content: center
+					align-items: center
+					cursor: pointer
+					svg 
+						fill: $color_shuttle_gray_approx
+						width: 22px
+
+		img 
+			max-width: 100%
+			min-width: 20%
+			max-height: 90%
+			z-index: 2
+			cursor: pointer
+			
+			border-radius: $borderradius_5px
+
+
+	.photo-post-preview-right-container 
+		width: 27.7%
+		background: $white
+		.user-post-container 
+			width: auto !important
+			height: auto !important
+			
+			box-shadow: none !important
+
+.DialogBox 
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	align-content: center
+	z-index: 9999
+	.DialogBox-background 
+		width: 100%
+		height: 100%
+		background: $red
+		position: absolute
+		background: $white
+		opacity: 0.75
+
+	.DialogBox-content 
+		min-width: 350px
+		max-width: 600px
+		min-height: 150px
+		background: $white
+		z-index: 999
+		position: relative
+		//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+		border-radius: 5px
+		//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 4px 32px -8px $black_75
+		.DialogBox-header 
+			padding: 15px
+			border-bottom: 0.5px solid $color_alto_approx
+			text-align: center
+			position: relative
+			h2 
+				font-size: 20px
+				font-weight: 800
+
+			.DialogBox-close 
+				width: 35px
+				height: 35px
+				//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+				border-radius: 50%
+				background: $color_athens_gray_approx
+				position: absolute
+				right: 20px
+				top: 12.5px
+				cursor: pointer
+
+
+		.DialogBox-body 
+			padding: 0 10px
+			padding-right: 10px
+			max-height: 500px
+			overflow-y: auto
+			.content 
+				padding: 10px
+				padding-left: 0px
+				&.pick 
+					display: grid
+					grid-template-columns: 1fr 1fr 1fr 1fr
+					width: 100%
+					justify-content: center
+					.item 
+						width: 60px
+						height: 60px
+						//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+						border-radius: 20px
+						margin: 10px
+						cursor: pointer
+						display: flex
+						justify-content: center
+						align-content: center
+						align-items: center
+						&:hover 
+							background: $color_athens_gray_approx
+
+						.circle 
+							width: 50px
+							height: 50px
+							//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+							border-radius: 50%
+							background: $black
+
+
+
+
+
+		.buttons 
+			padding: 10px
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			button 
+				padding: 8px
+				padding-left: 10px
+				padding-right: 10px
+				margin-left: 10px
+				min-width: 70px
+				background: $color_azure_radiance_approx
+				color: $white
+				border: none
+				//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+				border-radius: 5px
+				cursor: pointer
+				outline: none
+				font-weight: 600
+				font-size: 15px
+				&:first-child 
+					background: none
+					color: $color_azure_radiance_approx
+
+				&:active 
+					//If you use compass, instead of the line below you could use + transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+					transform: scale(0.9)

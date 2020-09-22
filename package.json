@@ -7,19 +7,26 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "nodemon server/server.js"
+    "start": "node server.js",
+    "dev": "concurrently --kill-others \"nodemon server/server.js\" \"nodemon server/communicationServer.js\"  \"sass --watch assets/sass/style.sass:assets/css/styles.css\""
   },
   "author": "Jhon Orlan Tero",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "localtunnel": "^2.0.0",
     "moment": "^2.27.0",
+    "path": "^0.12.7",
+    "php-express": "0.0.3",
+    "php-node": "0.0.2",
+    "phpsession": "^0.2.0",
+    "sass": "^1.26.10",
     "socket.io": "^2.3.0",
+    "uuid": "^8.3.0",
     "winston": "^3.3.3"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "nodemon": "^2.0.4"
   }
 }
